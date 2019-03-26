@@ -1,0 +1,6 @@
+C:\Users\Виктор\Desktop\MASNMD_GA\Для проекта\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Виктор\Desktop\MASNMD_GA\Для проекта\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Виктор\Desktop\MASNMD_GA\Для проекта\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Виктор\Desktop\MASNMD_GA\Для проекта\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Виктор\Desktop\MASNMD_GA\Для проекта\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\Виктор\Desktop\MASNMD_GA\Для проекта\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
