@@ -20,6 +20,8 @@ namespace MAASNMD
 
         static public double up_relative_accuracy;
         static public double down_relative_accuracy;
+        static public double up_absolute_accuracy;
+        static public double down_absolute_accuracy;
 
         static public string polynome_type;
 

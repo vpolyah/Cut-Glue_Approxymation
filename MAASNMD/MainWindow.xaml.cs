@@ -368,16 +368,22 @@ namespace MAASNMD
 
             double up_relative_acc = 0;
             double down_relative_acc = 0;
+            double up_absolute_acc = 0;
+            double down_absolute_acc = 0;
 
             Dispatcher.Invoke(new Action(() =>
             {
                 pbar.Maximum = Global.polynomeNumb+1;
                 up_relative_acc = (double)RelativeAccuracyUp.Value;
                 down_relative_acc = (double)RelativeAccuracyDown.Value;
+                up_absolute_acc = (double)AbsoluteAccuracyUp.Value;
+                down_absolute_acc = (double)AbsoluteAccuracyDown.Value;
             }));
 
             Global.up_relative_accuracy = up_relative_acc;
             Global.down_relative_accuracy = down_relative_acc;
+            Global.up_absolute_accuracy = up_absolute_acc;
+            Global.down_absolute_accuracy = down_absolute_acc;
 
             if (Global.polynomeNumb > 20)
             {
@@ -573,6 +579,8 @@ namespace MAASNMD
 
             double up_relative_acc = 0;
             double down_relative_acc = 0;
+            double up_absolute_acc = 0;
+            double down_absolute_acc = 0;
 
             int generation_option = 0;
             int population_option = 0;
@@ -584,6 +592,8 @@ namespace MAASNMD
                 pbar.Maximum = (double)Generation_up_down.Value;
                 up_relative_acc = (double)RelativeAccuracyUp.Value;
                 down_relative_acc = (double)RelativeAccuracyDown.Value;
+                up_absolute_acc = (double)AbsoluteAccuracyUp.Value;
+                down_absolute_acc = (double)AbsoluteAccuracyDown.Value;
                 generation_option = (int)Generation_up_down.Value;
                 population_option = (int)Population_up_down.Value;
                 crossover_option = (int)Crossover_up_down.Value;
@@ -592,6 +602,10 @@ namespace MAASNMD
 
             Global.up_relative_accuracy = up_relative_acc;
             Global.down_relative_accuracy = down_relative_acc;
+            Global.up_absolute_accuracy = up_absolute_acc;
+            Global.down_absolute_accuracy = down_absolute_acc;
+
+
             Global.GenerationEGA = generation_option;
             Global.PopulationEGA = population_option;
             Global.CrossoverEGA = crossover_option;

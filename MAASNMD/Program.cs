@@ -61,7 +61,10 @@ namespace MAASNMD
         {
             ObjectsList.Clear();
 			Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog();
-            openFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
+            openFileDialog.InitialDirectory = @"ApproxymationProgram\\";
+
+            var fileContent = string.Empty;
+            var filePath = string.Empty;
 
             if (openFileDialog.ShowDialog() == true)
             {
@@ -980,7 +983,9 @@ namespace MAASNMD
             int k = groupList.Count;
             for (int i = 0; i < k; i++)
             {
-                if (groupList[i].commonRelError < Global.down_relative_accuracy || groupList[i].commonRelError > Global.up_relative_accuracy)
+                if (groupList[i].commonRelError < Global.down_relative_accuracy || groupList[i].commonRelError > Global.up_relative_accuracy ||
+                    groupList[i].commonAbsEror < Global.down_absolute_accuracy || groupList[i].commonAbsEror > Global.up_absolute_accuracy
+                    )
                 {
                     groupList.Remove(groupList[i]);
                     i = -1;
