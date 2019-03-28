@@ -385,3 +385,36 @@ C:\Users\victor.polyakh\Desktop\Science\Soft\MASNMD_GA (3X) 1.0.1\MAASNMD\obj\De
 C:\Users\victor.polyakh\Desktop\Science\Soft\MASNMD_GA (3X) 1.0.1\MAASNMD\obj\Debug\MAASNMD.csproj.CopyComplete
 C:\Users\victor.polyakh\Desktop\Science\Soft\MASNMD_GA (3X) 1.0.1\MAASNMD\obj\Debug\MAASNMD.exe
 C:\Users\victor.polyakh\Desktop\Science\Soft\MASNMD_GA (3X) 1.0.1\MAASNMD\obj\Debug\MAASNMD.pdb
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\bin\Debug\MAASNMD.exe.config
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\bin\Debug\MAASNMD.exe
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\bin\Debug\MAASNMD.pdb
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\bin\Debug\alglibnet2.dll
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\bin\Debug\alglibnet2.Fakes.dll
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\bin\Debug\ClosedXML.dll
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\bin\Debug\MathNet.Numerics.dll
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\bin\Debug\Microsoft.Owin.dll
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\bin\Debug\Owin.dll
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\bin\Debug\alglibnet2.Fakes.xml
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\bin\Debug\ClosedXML.pdb
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\bin\Debug\MathNet.Numerics.xml
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\bin\Debug\Microsoft.Owin.xml
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\obj\Debug\MAASNMD.csprojAssemblyReference.cache
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\obj\Debug\MainWindow.g.cs
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\obj\Debug\App.g.cs
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\obj\Debug\MAASNMD_MarkupCompile.cache
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\obj\Debug\MAASNMD_MarkupCompile.lref
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\obj\Debug\MainWindow.baml
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\obj\Debug\MAASNMD.g.resources
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\obj\Debug\MAASNMD.Properties.Resources.resources
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\obj\Debug\MAASNMD.csproj.GenerateResource.cache
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\obj\Debug\MAASNMD.csproj.CoreCompileInputs.cache
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\obj\Debug\MAASNMD.csproj.CopyComplete
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\obj\Debug\MAASNMD.exe
+C:\Users\victor.polyakh\Desktop\Science\Soft\ApproxymationProgram\Cut-Glue_Approxymation\MAASNMD\obj\Debug\MAASNMD.pdb

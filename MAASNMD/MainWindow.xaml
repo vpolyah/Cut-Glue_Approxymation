@@ -12,21 +12,21 @@
 
 
     <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
-        <Border BorderBrush="Black" Grid.Column="0" HorizontalAlignment="Stretch" Height="Auto" VerticalAlignment="Stretch" Margin="0,0,428,0">
+        <Border BorderBrush="Black" Grid.Column="0" HorizontalAlignment="Stretch" Height="Auto" VerticalAlignment="Stretch" Margin="0,15,440.333,0.333">
 
-            <TabControl x:Name="tabcontrol2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  RenderTransformOrigin="0.481,0.52" Margin="1,0,10,0">
+            <TabControl x:Name="tabcontrol2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  RenderTransformOrigin="0.481,0.52" Margin="1,5,10.333,0.333">
 
                 <!--<TabItem x:Name="Big_log" Header="Big log" Margin="-2,0,-1,0">
                     <TextBox x:Name="infoTextBox1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="Auto" Width="Auto" IsReadOnly="True" VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" FontSize="14" FontFamily="Arial" Margin="0,-5,-3,-1"/>
                 </TabItem>-->
-				<TabItem x:Name="Hand_mode" Header="Hand mode" Margin="-2,0,-1,0">
-                    <TextBox x:Name="infoTextBox2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="Auto" Width="Auto" IsReadOnly="True" VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" FontSize="14" FontFamily="Arial" Margin="0,-5,-3,-1"/>
+                <TabItem x:Name="Hand_mode" Header="Hand mode" Margin="-2,0,-1,0">
+                    <TextBox x:Name="infoTextBox2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="Auto" Width="Auto" IsReadOnly="True" VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" FontSize="14" FontFamily="Arial" Margin="0,-2,-3,-1"/>
                 </TabItem>
-                <TabItem x:Name="Mini_log" Header="Optimization results" Margin="-2,0,-1,0">
+                <!--<TabItem x:Name="Mini_log" Header="Optimization results" Margin="-2,0,-1,0">
                     <TextBox x:Name="infoTextBox" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="Auto" Width="Auto" IsReadOnly="True" VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" FontSize="14" FontFamily="Arial" Margin="0,-5,-4,-1"/>
-                </TabItem>
+                </TabItem>-->
                 <TabItem x:Name="SearchResults" Header="Results in table" Margin="-2,0,-1,0">
-                    <DataGrid x:Name="Gd" AutoGenerateColumns="true">
+                    <DataGrid x:Name="Gd" AutoGenerateColumns="true" Margin="-2,-2,-6,-1.333" RenderTransformOrigin="0.313,0.361">
                         <!--<DataGrid.Columns>
 
                             <DataGridTextColumn Header="Name" Binding="{Binding Name}" />
@@ -48,16 +48,16 @@
 
 
         </Border>
-        <Border HorizontalAlignment="Right" Height="Auto" VerticalAlignment="Stretch" Width="342" Margin="0,0,0,0"  >
+        <Border HorizontalAlignment="Right" Height="Auto" VerticalAlignment="Stretch" Width="342" Margin="0,2,2.333,-1.667"  >
             <Grid HorizontalAlignment="Right" Width="419" Margin="-87,10,10,0">
-                <GroupBox x:Name="groupBox1" Header="Experimental data" HorizontalAlignment="Left" Height="75"  VerticalAlignment="Top" Width="171" Margin="36,10,0,0">
+                <GroupBox x:Name="groupBox1" Header="Experimental data" HorizontalAlignment="Left" Height="63"  VerticalAlignment="Top" Width="171" Margin="36,10,0,0">
                     <Grid>
                         <Button x:Name="openData" Content="Open" HorizontalAlignment="Left" Height="25" Margin="39,10,0,0" VerticalAlignment="Top" Width="56" Click="openData_Click"/>
 
 
                     </Grid>
                 </GroupBox>
-                <GroupBox x:Name="groupBox2" Header="Polynomial" HorizontalAlignment="Left" Height="75" VerticalAlignment="Top" Width="152" Margin="215,10,0,0">
+                <GroupBox x:Name="groupBox2" Header="Polynomial" HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="180" Margin="215,10,0,0">
                     <Grid Margin="0,0,-2,0">
                         <Label Content="Power:" HorizontalAlignment="Left" Margin="25,10,0,0" VerticalAlignment="Top" Height="25"/>
                         <ComboBox x:Name="polDegreeComboBox" HorizontalAlignment="Left" Height="25" Margin="82,10,0,0" VerticalAlignment="Top" Width="35" SelectionChanged="polDegreeComboBox_SelectionChanged">
@@ -92,23 +92,45 @@
                 </GroupBox>
                 -->
 
-                <Button Content="Combinatorial optimization" HorizontalAlignment="Left" Margin="225,117,0,0" VerticalAlignment="Top" Width="156" Click="Button_Click" RenderTransformOrigin="1.058,0.667"/>
-                <GroupBox x:Name="groupBox4_Copy" Header="Accuracy borders" HorizontalAlignment="Left" Height="65" VerticalAlignment="Top" Width="171" Margin="36,90,0,0">
-                    <Grid/>
+                <Button Content="Combinatorial optimization" HorizontalAlignment="Left" Margin="239,207,0,0" VerticalAlignment="Top" Width="156" Click="Button_Click" RenderTransformOrigin="1.058,0.667"/>
+                <GroupBox x:Name="groupBox4_Copy" Header="Accuracy borders" HorizontalAlignment="Left" Height="110" VerticalAlignment="Top" Width="275" Margin="40,73,0,0">
+                    <TabControl x:Name="tabcontrol3" HorizontalAlignment="Right" VerticalAlignment="Stretch"  RenderTransformOrigin="0.508,0.882" Margin="0,0,52.667,-0.667" Width="205">
+                        <TabItem x:Name="Hand_mode1" Header="Relative acc.">
+                            <Grid Margin="-3,-10,1.333,11.333" >
+                                <xctk:DoubleUpDown x:Name="AccuracyDown" HorizontalAlignment="Left" Margin="51,25,0,0" VerticalAlignment="Top" DisplayDefaultValueOnEmptyText="True" DefaultValue="0.005" Increment="0.001" ForceCursor="True" Minimum="0" Maximum="1"/>
+                                <xctk:DoubleUpDown x:Name="AccuracyUp" HorizontalAlignment="Left" Margin="133,25,0,0" VerticalAlignment="Top" DefaultValue="0.1" RenderTransformOrigin="0.5,0.5" Width="55" Increment="0.001" DisplayDefaultValueOnEmptyText="True">
+                                    <xctk:DoubleUpDown.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="0.649"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </xctk:DoubleUpDown.RenderTransform>
+                                </xctk:DoubleUpDown>
+                                <Label Content="from:" HorizontalAlignment="Left" Margin="8,22,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.028,0.6"/>
+                                <Label Content="to:" HorizontalAlignment="Left" Margin="110,22,0,0" VerticalAlignment="Top" Width="29" RenderTransformOrigin="1.23,0.462"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="Hand_mode2" Header="Absolute acc.">
+                            <Grid Margin="-3,-10,1.333,11.333" >
+                                <xctk:DoubleUpDown x:Name="AccuracyDown2" HorizontalAlignment="Left" Margin="52,22,0,0" VerticalAlignment="Top" DisplayDefaultValueOnEmptyText="True" DefaultValue="0.005" Increment="0.001" ForceCursor="True" Minimum="0" Maximum="1"/>
+                                <xctk:DoubleUpDown x:Name="AccuracyUp2" HorizontalAlignment="Left" Margin="134,22,0,0" VerticalAlignment="Top" DefaultValue="0.1" RenderTransformOrigin="0.5,0.5" Width="55" Increment="0.001" DisplayDefaultValueOnEmptyText="True">
+                                    <xctk:DoubleUpDown.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="0.649"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </xctk:DoubleUpDown.RenderTransform>
+                                </xctk:DoubleUpDown>
+                                <Label Content="from:" HorizontalAlignment="Left" Margin="9,19,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.028,0.6"/>
+                                <Label Content="to:" HorizontalAlignment="Left" Margin="111,19,0,0" VerticalAlignment="Top" Width="29" RenderTransformOrigin="1.23,0.462"/>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
                 </GroupBox>
-                <xctk:DoubleUpDown Name="AccuracyDown" HorizontalAlignment="Left" Margin="69,120,0,0" VerticalAlignment="Top" DisplayDefaultValueOnEmptyText="True" DefaultValue="0.005" Increment="0.001" ForceCursor="True" Minimum="0" Maximum="1"/>
-                <xctk:DoubleUpDown Name="AccuracyUp" HorizontalAlignment="Left" Margin="143,121,0,0" VerticalAlignment="Top" DefaultValue="0.1" RenderTransformOrigin="0.5,0.5" Width="55" Increment="0.001" DisplayDefaultValueOnEmptyText="True">
-                    <xctk:DoubleUpDown.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <RotateTransform Angle="0.649"/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </xctk:DoubleUpDown.RenderTransform>
-                </xctk:DoubleUpDown>
-                <Label Content="from:" HorizontalAlignment="Left" Margin="36,117,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.028,0.6"/>
-                <Label Content="to:" HorizontalAlignment="Left" Margin="120,117,0,0" VerticalAlignment="Top" Width="29"/>
                 <TextBox Name="textbox_1" HorizontalAlignment="Left" Height="40" Margin="10,401,0,0" TextWrapping="Wrap" Text="Polynomial combination №1" VerticalAlignment="Top" Width="399" Background="#FF76CBDE"/>
                 <Button Name="Hand_regress" Content="Regression coefficient" HorizontalAlignment="Left" Margin="134,441,0,0" VerticalAlignment="Top" Width="152" Height="26" Click="Hand_regress_Click"/>
                 <Label Content="Manual mode" HorizontalAlignment="Left" Margin="153,369,0,0" VerticalAlignment="Top" Height="27" Width="116" FontFamily="Times New Roman" FontStyle="Italic" FontSize="16">
@@ -119,17 +141,17 @@
                 <Button Content="To Excel" Name="ToExcel" HorizontalAlignment="Left" Margin="310,489,0,0" VerticalAlignment="Top" Width="99" Height="26" Click="ToExcel_Click"/>
                 <ProgressBar Name="pbar" HorizontalAlignment="Left" Height="21" Margin="36,348,0,0" VerticalAlignment="Top" Width="331"/>
                 <Label Content="Optimization progress" HorizontalAlignment="Left" Margin="36,318,0,0" VerticalAlignment="Top" Width="129"/>
-                <Button Content="EGA optimization" HorizontalAlignment="Left" Margin="258,208,0,0" VerticalAlignment="Top" Width="109" Click="Button_Click_1"/>
-                <GroupBox x:Name="groupBox4_Copy1" Header="EGA parameters" HorizontalAlignment="Left" Height="148" VerticalAlignment="Top" Width="166" Margin="41,170,0,0">
+                <Button Content="EGA optimization" HorizontalAlignment="Left" Margin="240,243,0,0" VerticalAlignment="Top" Width="109" Click="Button_Click_1"/>
+                <GroupBox x:Name="groupBox4_Copy1" Header="EGA parameters" HorizontalAlignment="Left" Height="148" VerticalAlignment="Top" Width="166" Margin="40,178,0,0">
                     <Grid>
                         <xctk:DoubleUpDown x:Name="Generation_up_down" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" DisplayDefaultValueOnEmptyText="True" DefaultValue="100" Increment="1" ForceCursor="True" Minimum="0" Maximum="1000000" Width="60"/>
                         <xctk:DoubleUpDown x:Name="Crossover_up_down" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" DisplayDefaultValueOnEmptyText="True" DefaultValue="60" Increment="1" ForceCursor="True" Minimum="0" Maximum="100" Width="60"/>
                         <xctk:DoubleUpDown x:Name="Mutation_up_down" HorizontalAlignment="Left" Margin="10,97,0,0" VerticalAlignment="Top" DisplayDefaultValueOnEmptyText="True" DefaultValue="30" Increment="1" ForceCursor="True" Minimum="0" Maximum="100" Width="60"/>
                     </Grid>
                 </GroupBox>
-                <Label Content="Generations" HorizontalAlignment="Left" Margin="120,191,0,0" VerticalAlignment="Top"/>
-                <xctk:DoubleUpDown x:Name="Population_up_down" HorizontalAlignment="Left" Margin="56,226,0,0" VerticalAlignment="Top" DisplayDefaultValueOnEmptyText="True" DefaultValue="100" Increment="1" ForceCursor="True" Minimum="0" Maximum="10000000000" Width="59"/>
-                <Label Content="Population" HorizontalAlignment="Left" Margin="120,223,0,0" VerticalAlignment="Top"/>
+                <Label Content="Generations" HorizontalAlignment="Left" Margin="117,201,0,0" VerticalAlignment="Top"/>
+                <xctk:DoubleUpDown x:Name="Population_up_down" HorizontalAlignment="Left" Margin="56,233,0,0" VerticalAlignment="Top" DisplayDefaultValueOnEmptyText="True" DefaultValue="100" Increment="1" ForceCursor="True" Minimum="0" Maximum="10000000000" Width="59"/>
+                <Label Content="Population" HorizontalAlignment="Left" Margin="120,228,0,0" VerticalAlignment="Top"/>
                 <Label Content="Crossover" HorizontalAlignment="Left" Margin="120,253,0,0" VerticalAlignment="Top"/>
                 <Label Content="Mutation" HorizontalAlignment="Left" Margin="120,278,0,0" VerticalAlignment="Top"/>
 

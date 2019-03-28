@@ -2,1303 +2,1369 @@
 *************************************************************************************************
 Polynomial combination № 1
 Created polynomial info:
-0+1+111+1111+11111+1111111+11111111+111111111
-Absolute error value 0,0141590217955327
-Relative error value 0,00531096091355317
+1+2+11+22+111+112+122
+Absolute error value 49,2944018609836
+Relative error value 0,0633294815655382
 
 Polynomial combination № 2
 Created polynomial info:
-0+1+11+111+1111+11111+111111
-Absolute error value 0,0753819739175707
-Relative error value 0,0302011113451806
+0+1+2+11+22+111+112+122
+Absolute error value 49,3598397075529
+Relative error value 0,0498770648702574
 
 Polynomial combination № 3
 Created polynomial info:
-0+1+11+111+1111+11111+1111111
-Absolute error value 0,0768332152298723
-Relative error value 0,0307825381529937
+0+1+11+22+111+112+122+222
+Absolute error value 49,5977291071919
+Relative error value 0,0637191720074923
 
 Polynomial combination № 4
 Created polynomial info:
-0+1+11+111+1111+11111+11111111
-Absolute error value 0,0777005797200943
-Relative error value 0,0311300399519608
+0+1+2+11+12+22+111+112+122+222
+Absolute error value 49,7825508821597
+Relative error value 0,0519694242548018
 
 Polynomial combination № 5
 Created polynomial info:
-0+1+11+111+1111+11111+111111111
-Absolute error value 0,0782369173422928
-Relative error value 0,0313449188070083
+1+2+11+22+111+112+122+222
+Absolute error value 49,8373519725383
+Relative error value 0,064027020186205
 
 Polynomial combination № 6
 Created polynomial info:
-0+1+11+111+1111+111111+1111111
-Absolute error value 0,0792503875695121
-Relative error value 0,0317509565582981
+0+1+2+11+111+112+122+222
+Absolute error value 49,8511662048717
+Relative error value 0,0640447676004929
 
 Polynomial combination № 7
 Created polynomial info:
-0+1+11+111+1111+111111+11111111
-Absolute error value 0,0800834064634341
-Relative error value 0,0320846981023374
+1+2+11+111+112+122+222
+Absolute error value 50,56775455934
+Relative error value 0,0649653826657159
 
 Polynomial combination № 8
 Created polynomial info:
-0+1+11+111+1111+111111+111111111
-Absolute error value 0,0805954584277031
-Relative error value 0,0322898471264836
+0+1+11+22+111+112+122
+Absolute error value 51,3109506229224
+Relative error value 0,0659201811749048
 
 Polynomial combination № 9
 Created polynomial info:
-0+1+11+111+1111+1111111+11111111
-Absolute error value 0,0814255241787549
-Relative error value 0,0326224055203345
+1+11+22+111+112+122+222
+Absolute error value 53,3931945780561
+Relative error value 0,0539526839102049
 
 Polynomial combination № 10
 Created polynomial info:
-0+1+11+111+1111+1111111+111111111
-Absolute error value 0,0819192295215982
-Relative error value 0,0328202041352557
+0+1+2+11+22+111+112+122+222
+Absolute error value 55,8831847347257
+Relative error value 0,0717942197059607
 
 Polynomial combination № 11
 Created polynomial info:
-0+1+11+111+1111+11111111+111111111
-Absolute error value 0,0826941964889523
-Relative error value 0,0331306876958943
+0+1+2+11+111+122+222
+Absolute error value 57,382708138411
+Relative error value 0,057984002241657
 
 Polynomial combination № 12
 Created polynomial info:
-0+1+11+111+11111+111111+1111111
-Absolute error value 0,0835327172367681
-Relative error value 0,0334666335083206
+1+11+22+111+122
+Absolute error value 57,4716719649638
+Relative error value 0,0580738982902335
 
 Polynomial combination № 13
 Created polynomial info:
-0+1+11+111+11111+111111+11111111
-Absolute error value 0,0843207276603741
-Relative error value 0,0337823428126499
+1+11+22+111+112+122
+Absolute error value 57,6747703599887
+Relative error value 0,0740959047765727
 
 Polynomial combination № 14
 Created polynomial info:
-0+1+11+111+11111+111111+111111111
-Absolute error value 0,0848025266571142
-Relative error value 0,0339753712568566
+0+1+11+22+111+122+222
+Absolute error value 58,0548994576221
+Relative error value 0,0586632372276731
 
 Polynomial combination № 15
 Created polynomial info:
-0+1+11+111+11111+1111111+11111111
-Absolute error value 0,0855984234844378
-Relative error value 0,03429424017806
+0+1+11+22+111+122
+Absolute error value 58,8138843530479
+Relative error value 0,0594301752706041
 
 Polynomial combination № 16
 Created polynomial info:
-0+1+11+111+11111+1111111+111111111
-Absolute error value 0,0860632695557997
-Relative error value 0,0344804765848556
+0+1+2+11+22+111+122
+Absolute error value 59,3420837022137
+Relative error value 0,059963909443139
 
 Polynomial combination № 17
 Created polynomial info:
-0+1+11+111+11111+11111111+111111111
-Absolute error value 0,0867975360743491
-Relative error value 0,0347746538759412
+0+1+11+12+111+112+122+222
+Absolute error value 59,4540454193433
+Relative error value 0,0763817742225433
 
 Polynomial combination № 18
 Created polynomial info:
-0+1+11+111+111111+1111111+11111111
-Absolute error value 0,0877739298554086
-Relative error value 0,0351658372818143
+1+2+11+22+111+122
+Absolute error value 60,852539161673
+Relative error value 0,0614901924574568
 
 Polynomial combination № 19
 Created polynomial info:
-0+1+11+111+111111+1111111+111111111
-Absolute error value 0,0882185838247449
-Relative error value 0,0353439839041446
+0+1+2+11+12+22+111+112+222
+Absolute error value 61,7916845796195
+Relative error value 0,0793849849425981
 
 Polynomial combination № 20
 Created polynomial info:
-0+1+11+111+111111+11111111+111111111
-Absolute error value 0,088925596102817
-Relative error value 0,0356272420283722
+1+11+22+111+122+222
+Absolute error value 62,1079454645688
+Relative error value 0,0627587537408616
 
 Polynomial combination № 21
 Created polynomial info:
-0+1+11+111+1111111+11111111+111111111
-Absolute error value 0,0900987436067902
-Relative error value 0,0360972530475922
+0+2+11+12+22+111+112+122+222
+Absolute error value 63,5776434973346
+Relative error value 0,0663705147583667
 
 Polynomial combination № 22
 Created polynomial info:
-0+1+111+1111+11111+111111+1111111+11111111
-Absolute error value 0,0139344959575398
-Relative error value 0,00522674266974487
+0+2+11+12+22+111+122+222
+Absolute error value 63,8284230045145
+Relative error value 0,0666323106360808
 
 Polynomial combination № 23
 Created polynomial info:
-0+1+111+1111+11111+111111+1111111+111111111
-Absolute error value 0,0139746198766977
-Relative error value 0,00524179290198713
+1+2+11+12+22+111+112+222
+Absolute error value 64,2172027311273
+Relative error value 0,0648901132050638
 
 Polynomial combination № 24
 Created polynomial info:
-0+1+111+1111+11111+111111+11111111+111111111
-Absolute error value 0,0140414149727257
-Relative error value 0,00526684732660379
+0+1+11+12+22+111+112+222
+Absolute error value 67,2553246623603
+Relative error value 0,0679600705944245
 
 Polynomial combination № 25
 Created polynomial info:
-0+1+11+1111+11111+111111+1111111
-Absolute error value 0,0918328021094532
-Relative error value 0,0367919880246207
+1+2+11+12+22+111+222
+Absolute error value 68,2153190590763
+Relative error value 0,0689301244496188
 
 Polynomial combination № 26
 Created polynomial info:
-0+1+11+1111+11111+111111+11111111
-Absolute error value 0,0925557105219794
-Relative error value 0,0370816147924597
+0+1+2+11+12+111+112+222
+Absolute error value 68,2227771090003
+Relative error value 0,0689376606499402
 
 Polynomial combination № 27
 Created polynomial info:
-0+1+11+1111+11111+111111+111111111
-Absolute error value 0,0929947286716746
-Relative error value 0,0372575034742286
+0+1+11+12+22+111+222
+Absolute error value 70,8051486687074
+Relative error value 0,071547092012881
 
 Polynomial combination № 28
 Created polynomial info:
-0+1+11+1111+11111+1111111+11111111
-Absolute error value 0,0937350493801348
-Relative error value 0,0375541063221694
+0+1+2+11+12+111+222
+Absolute error value 71,5714336510654
+Relative error value 0,0723214066379004
 
 Polynomial combination № 29
 Created polynomial info:
-0+1+11+1111+11111+1111111+111111111
-Absolute error value 0,09415782397368
-Relative error value 0,0377234871689423
+0+1+2+11+12+22+111+112
+Absolute error value 71,6944133146807
+Relative error value 0,072445674964058
 
 Polynomial combination № 30
 Created polynomial info:
-0+1+11+1111+11111+11111111+111111111
-Absolute error value 0,094829173493217
-Relative error value 0,0379924573290132
+0+1+11+12+111+112+222
+Absolute error value 71,8238283268739
+Relative error value 0,0725764460726473
 
 Polynomial combination № 31
 Created polynomial info:
-0+1+11+1111+111111+1111111+11111111
-Absolute error value 0,0957556304058915
-Relative error value 0,0383636339767194
+0+1+11+12+111+222
+Absolute error value 73,7396081840292
+Relative error value 0,0745123007427313
 
 Polynomial combination № 32
 Created polynomial info:
-0+1+11+1111+111111+1111111+111111111
-Absolute error value 0,096157920802606
-Relative error value 0,0385248080138646
+0+1+2+11+111+122
+Absolute error value 74,6860590516068
+Relative error value 0,0754686691506995
 
 Polynomial combination № 33
 Created polynomial info:
-0+1+11+1111+111111+11111111+111111111
-Absolute error value 0,0968006110904502
-Relative error value 0,038782296109956
+0+1+2+11+12+22+111
+Absolute error value 75,0430698567151
+Relative error value 0,0758294209519872
 
 Polynomial combination № 34
 Created polynomial info:
-0+1+11+1111+1111111+11111111+111111111
-Absolute error value 0,0978715291976977
-Relative error value 0,0392113498388212
+1+2+11+12+111+112+222
+Absolute error value 77,7466749772278
+Relative error value 0,0785613562414517
 
 Polynomial combination № 35
 Created polynomial info:
-0+1+11+11111+111111+1111111+11111111
-Absolute error value 0,0994252826959796
-Relative error value 0,0398338472339662
+1+2+11+12+111+222
+Absolute error value 78,45352474096
+Relative error value 0,0792756128461748
 
 Polynomial combination № 36
 Created polynomial info:
-0+1+11+11111+111111+1111111+111111111
-Absolute error value 0,0997972818977502
-Relative error value 0,0399828853757012
+1+11+12+22+111+222
+Absolute error value 79,9676464103478
+Relative error value 0,0808056004874022
 
 Polynomial combination № 37
 Created polynomial info:
-0+1+11+11111+111111+11111111+111111111
-Absolute error value 0,100394292129244
-Relative error value 0,0402220721671651
+1+11+12+22+111+112+222
+Absolute error value 80,147351417762
+Relative error value 0,080987188563162
 
 Polynomial combination № 38
 Created polynomial info:
-0+1+11+11111+1111111+11111111+111111111
-Absolute error value 0,101392220247818
-Relative error value 0,0406218831121065
+1+2+11+12+22+111+112
+Absolute error value 86,6568584335847
+Relative error value 0,0875649065141363
 
 Polynomial combination № 39
 Created polynomial info:
-0+1+11+111111+1111111+11111111+111111111
-Absolute error value 0,103127204464414
-Relative error value 0,0413169889681144
+1+11+12+22+111+112
+Absolute error value 87,00437267002
+Relative error value 0,0879160622354011
 
 Polynomial combination № 40
 Created polynomial info:
-0+1+111+1111+11111+111111+1111111
-Absolute error value 0,110968228344148
-Relative error value 0,0444584248173669
+1+2+11+12+22+111
+Absolute error value 87,1713822038745
+Relative error value 0,0880848218060027
 
 Polynomial combination № 41
 Created polynomial info:
-0+1+111+1111+11111+111111+11111111
-Absolute error value 0,111605186588396
-Relative error value 0,0447136164216329
+0+1+11+12+22+111+112
+Absolute error value 87,6908715095968
+Relative error value 0,0886097546654778
 
 Polynomial combination № 42
 Created polynomial info:
-0+1+111+1111+11111+111111+111111111
-Absolute error value 0,111989276341432
-Relative error value 0,0448674985342275
+1+11+12+22+111
+Absolute error value 88,0788765244441
+Relative error value 0,0890018254544063
 
 Polynomial combination № 43
 Created polynomial info:
-0+1+111+1111+11111+1111111+11111111
-Absolute error value 0,112652979186602
-Relative error value 0,0451334051228374
+2+11+111+112+122+222
+Absolute error value 88,6175006076737
+Relative error value 0,0655416104133437
 
 Polynomial combination № 44
 Created polynomial info:
-0+1+111+1111+11111+1111111+111111111
-Absolute error value 0,113022428362567
-Relative error value 0,0452814216196181
+0+1+11+12+22+111
+Absolute error value 89,4163753276918
+Relative error value 0,0903533394578699
 
 Polynomial combination № 45
 Created polynomial info:
-0+1+111+1111+11111+11111111+111111111
-Absolute error value 0,113612865706688
-Relative error value 0,0455179750427436
+11+22+111+112+122+222
+Absolute error value 91,3401112601553
+Relative error value 0,0675552565381895
 
 Polynomial combination № 46
 Created polynomial info:
-0+1+11+111+1111+11111
-Absolute error value 0,11396994720494
-Relative error value 0,0456610365404406
+2+11+22+111+112+122+222
+Absolute error value 91,728370883995
+Relative error value 0,0678424138246221
 
 Polynomial combination № 47
 Created polynomial info:
-0+1+111+1111+111111+1111111+11111111
-Absolute error value 0,114468263867928
-Relative error value 0,045860682639394
+0+11+22+111+112+122+222
+Absolute error value 91,8730106617591
+Relative error value 0,0679493895788408
 
 Polynomial combination № 48
 Created polynomial info:
-0+1+111+1111+111111+1111111+111111111
-Absolute error value 0,114818871434041
-Relative error value 0,0460011504142793
+0+2+11+111+112+122+222
+Absolute error value 91,9621488208272
+Relative error value 0,06801531626888
 
 Polynomial combination № 49
 Created polynomial info:
-0+1+111+1111+111111+11111111+111111111
-Absolute error value 0,115382574493939
-Relative error value 0,0462269929863536
+0+2+11+22+111+112+122
+Absolute error value 93,1062857385559
+Relative error value 0,0688615213142388
 
 Polynomial combination № 50
 Created polynomial info:
-0+1+111+1111+1111111+11111111+111111111
-Absolute error value 0,116329609410789
-Relative error value 0,0466064140267585
+2+11+22+111+112+122
+Absolute error value 93,4609032308272
+Relative error value 0,0691237968395562
 
 Polynomial combination № 51
 Created polynomial info:
-0+1+11+111+1111+111111
-Absolute error value 0,116850840509314
-Relative error value 0,0468152405886673
+0+11+22+111+112+122
+Absolute error value 95,4534873598432
+Relative error value 0,0705975144664836
 
 Polynomial combination № 52
 Created polynomial info:
-0+1+111+11111+111111+1111111+11111111
-Absolute error value 0,117823803802286
-Relative error value 0,0472050496002749
+11+22+111+112+122
+Absolute error value 100,756552192816
+Relative error value 0,0745196676179045
 
 Polynomial combination № 53
 Created polynomial info:
-0+1+111+11111+111111+1111111+111111111
-Absolute error value 0,11814718959068
-Relative error value 0,0473346112142149
+0+1+111+112+122+222
+Absolute error value 100,956550373565
+Relative error value 0,0746675865137901
 
 Polynomial combination № 54
 Created polynomial info:
-0+1+11+111+1111+1111111
-Absolute error value 0,118581724532262
-Relative error value 0,0475087037388872
+0+1+12+111+112+122+222
+Absolute error value 101,333765006408
+Relative error value 0,0749465749115494
 
 Polynomial combination № 55
 Created polynomial info:
-0+1+111+11111+111111+11111111+111111111
-Absolute error value 0,118669789186711
-Relative error value 0,0475439860523681
+0+1+2+22+111+112+122+222
+Absolute error value 103,992977991506
+Relative error value 0,0769133320450757
 
 Polynomial combination № 56
 Created polynomial info:
-0+1+111+11111+1111111+11111111+111111111
-Absolute error value 0,119551716083506
-Relative error value 0,0478973221488405
+1+2+12+111+112+122+222
+Absolute error value 104,084573009317
+Relative error value 0,0769810758308062
 
 Polynomial combination № 57
 Created polynomial info:
-0+1+11+111+1111+11111111
-Absolute error value 0,119659192586428
-Relative error value 0,0479403816452036
+0+12+111+112+122+222
+Absolute error value 104,225726945244
+Relative error value 0,077085473452195
 
 Polynomial combination № 58
 Created polynomial info:
-0+1+111+111111+1111111+11111111+111111111
-Absolute error value 0,121109484307885
-Relative error value 0,0485214280079668
+0+1+12+22+111+112+122
+Absolute error value 105,010882097756
+Relative error value 0,077666175150698
 
 Polynomial combination № 59
 Created polynomial info:
-0+1+11+111+11111+111111
-Absolute error value 0,121754471993407
-Relative error value 0,0487798365358202
+1+2+12+22+111+112+122
+Absolute error value 105,47662008027
+Relative error value 0,0780106355247246
 
 Polynomial combination № 60
 Created polynomial info:
-0+1+11+111+11111+1111111
-Absolute error value 0,123441267187371
-Relative error value 0,0494556358923762
+1+12+22+111+112+122
+Absolute error value 105,875504808503
+Relative error value 0,0783056511511913
 
 Polynomial combination № 61
 Created polynomial info:
-0+1+11+111+11111+11111111
-Absolute error value 0,124485688297657
-Relative error value 0,0498740738372022
+1+12+22+111+112+122+222
+Absolute error value 106,317997063569
+Relative error value 0,0786329189571392
 
 Polynomial combination № 62
 Created polynomial info:
-0+1+1111+11111+111111+1111111+11111111
-Absolute error value 0,124758063586564
-Relative error value 0,0499831985523094
+1+2+111+112+122+222
+Absolute error value 106,986643365506
+Relative error value 0,0791274505691276
 
 Polynomial combination № 63
 Created polynomial info:
-0+1+1111+11111+111111+1111111+111111111
-Absolute error value 0,12504714098226
-Relative error value 0,0500990148166106
+0+2+12+22+111+122
+Absolute error value 107,112761429962
+Relative error value 0,0792207276418273
 
 Polynomial combination № 64
 Created polynomial info:
-0+1+11+111+11111+111111111
-Absolute error value 0,125149474445823
-Relative error value 0,0501400138004099
+0+1+2+12+111+112+122+222
+Absolute error value 107,583885210939
+Relative error value 0,0795691713588982
 
 Polynomial combination № 65
 Created polynomial info:
-0+1+1111+11111+111111+11111111+111111111
-Absolute error value 0,125517448851831
-Relative error value 0,0502874394438424
+0+2+11+12+22+111+112+222
+Absolute error value 107,708976064133
+Relative error value 0,079661688704909
 
 Polynomial combination № 66
 Created polynomial info:
-0+1+11+111+111111+1111111
-Absolute error value 0,126183129279339
-Relative error value 0,0505541383330685
+0+1+2+12+22+111+112+122
+Absolute error value 107,951590608303
+Relative error value 0,0798411267146196
 
 Polynomial combination № 67
 Created polynomial info:
-0+1+1111+11111+1111111+11111111+111111111
-Absolute error value 0,12631820433914
-Relative error value 0,0506082549435658
+2+22+111+122+222
+Absolute error value 108,092941714406
+Relative error value 0,0799456701633085
 
 Polynomial combination № 68
 Created polynomial info:
-0+1+11+111+111111+11111111
-Absolute error value 0,12720047370211
-Relative error value 0,0509617282460377
+0+1+12+22+111+112+122+222
+Absolute error value 108,116667505981
+Relative error value 0,0799632177873953
 
 Polynomial combination № 69
 Created polynomial info:
-0+1+1111+111111+1111111+11111111+111111111
-Absolute error value 0,127754300988117
-Relative error value 0,0511836141779315
+0+1+2+12+111+112+122
+Absolute error value 108,147770818415
+Relative error value 0,0799862218348139
 
 Polynomial combination № 70
 Created polynomial info:
-0+1+11+111+1111111+11111111
-Absolute error value 0,128801904277568
-Relative error value 0,0516033270342821
+1+2+12+22+111+112+122+222
+Absolute error value 108,206687743231
+Relative error value 0,0800297968635223
 
 Polynomial combination № 71
 Created polynomial info:
-0+1+11+111+1111111+111111111
-Absolute error value 0,129425697671353
-Relative error value 0,0518532442593564
+0+11+12+111+112+222
+Absolute error value 108,21678097185
+Relative error value 0,0800372618275915
 
 Polynomial combination № 72
 Created polynomial info:
-0+1+11111+111111+1111111+11111111+111111111
-Absolute error value 0,130566859669795
-Relative error value 0,0523104405728345
+0+12+22+111+122
+Absolute error value 108,568498039993
+Relative error value 0,0802973921957228
 
 Polynomial combination № 73
 Created polynomial info:
-0+1+11+1111+11111+111111
-Absolute error value 0,13103039816571
-Relative error value 0,0524961531112621
+0+11+111+112+222
+Absolute error value 108,573963017401
+Relative error value 0,0803014340996102
 
 Polynomial combination № 74
 Created polynomial info:
-0+1+11+1111+11111+1111111
-Absolute error value 0,132687320040383
-Relative error value 0,0531599839905382
+1+2+11+12+122+222
+Absolute error value 108,674647268228
+Relative error value 0,080375900293051
 
 Polynomial combination № 75
 Created polynomial info:
-0+1+11+1111+11111+11111111
-Absolute error value 0,1337097865466
-Relative error value 0,0535696260202726
+0+2+11+111+112+122
+Absolute error value 108,740078615069
+Relative error value 0,0804242933961517
 
 Polynomial combination № 76
 Created polynomial info:
-0+1+11+1111+111111+1111111
-Absolute error value 0,135408719559781
-Relative error value 0,0542502882851685
+12+22+111+122+222
+Absolute error value 108,840181372472
+Relative error value 0,0804983295163542
 
 Polynomial combination № 77
 Created polynomial info:
-0+1+11+1111+111111+11111111
-Absolute error value 0,136410384784678
-Relative error value 0,0546515964682202
+0+22+111+122+222
+Absolute error value 108,975745743441
+Relative error value 0,0805985930887528
 
 Polynomial combination № 78
 Created polynomial info:
-0+1+11+1111+1111111+11111111
-Absolute error value 0,138001589158125
-Relative error value 0,0552890982204026
+1+2+22+111+112+122+222
+Absolute error value 109,229730472566
+Relative error value 0,0807864405009805
 
 Polynomial combination № 79
 Created polynomial info:
-0+1+11+1111+1111111+111111111
-Absolute error value 0,138617135400361
-Relative error value 0,0555357112982216
+0+2+111+122+222
+Absolute error value 109,236255752341
+Relative error value 0,0807912666057786
 
 Polynomial combination № 80
 Created polynomial info:
-0+1+11+1111+11111111+111111111
-Absolute error value 0,139570747248026
-Relative error value 0,0559177673269335
+1+2+11+12+22+122
+Absolute error value 109,25081948458
+Relative error value 0,0808020379597212
 
 Polynomial combination № 81
 Created polynomial info:
-0+1+11+11111+111111+1111111
-Absolute error value 0,14020419475673
-Relative error value 0,0561715523865103
+2+12+22+111+122
+Absolute error value 109,577091472438
+Relative error value 0,0810433491157611
 
 Polynomial combination № 82
 Created polynomial info:
-0+1+11+11111+111111+11111111
-Absolute error value 0,141192686117003
-Relative error value 0,0565675825789277
+0+1+22+111+112+122+222
+Absolute error value 109,68024561989
+Relative error value 0,0811196420477265
 
 Polynomial combination № 83
 Created polynomial info:
-0+1+11+11111+111111+111111111
-Absolute error value 0,141813071625654
-Relative error value 0,0568161344654062
+0+1+2+111+112+122+222
+Absolute error value 109,780922575909
+Relative error value 0,0811941028459178
 
 Polynomial combination № 84
 Created polynomial info:
-0+1+11+11111+1111111+11111111
-Absolute error value 0,142775958200752
-Relative error value 0,0572019063304295
+2+12+111+112+122+222
+Absolute error value 109,852196812596
+Relative error value 0,0812468173574021
 
 Polynomial combination № 85
 Created polynomial info:
-0+1+11+11111+1111111+111111111
-Absolute error value 0,143384051239356
-Relative error value 0,0574455333491012
+0+2+11+22+111+112+222
+Absolute error value 109,996880012681
+Relative error value 0,0813538252268215
 
 Polynomial combination № 86
 Created polynomial info:
-0+1+11+11111+11111111+111111111
-Absolute error value 0,14433371695366
-Relative error value 0,0578260083948959
+2+12+22+111+112+122+222
+Absolute error value 110,078944377401
+Relative error value 0,0814145201300225
 
 Polynomial combination № 87
 Created polynomial info:
-0+1+11+111111+1111111+11111111
-Absolute error value 0,14545127725022
-Relative error value 0,0582737488983252
+0+1+2+11+12+122+222
+Absolute error value 110,178173034215
+Relative error value 0,0814879097643745
 
 Polynomial combination № 88
 Created polynomial info:
-0+1+11+111111+1111111+111111111
-Absolute error value 0,146052068032962
-Relative error value 0,0585144503337189
+0+2+22+111+122
+Absolute error value 110,276914593403
+Relative error value 0,0815609391407339
 
 Polynomial combination № 89
 Created polynomial info:
-0+1+11+111111+11111111+111111111
-Absolute error value 0,146998046652103
-Relative error value 0,0588934481779257
+1+22+111+112+122+222
+Absolute error value 110,364988543557
+Relative error value 0,081626078740575
 
 Polynomial combination № 90
 Created polynomial info:
-0+1+11+1111111+11111111+111111111
-Absolute error value 0,148557222449821
-Relative error value 0,0595181179686781
+1+11+12+22+122+222
+Absolute error value 110,395451911634
+Relative error value 0,081648609484375
 
 Polynomial combination № 91
 Created polynomial info:
-0+1+111+1111+11111+111111
-Absolute error value 0,15219020760775
-Relative error value 0,0609736408684895
+2+111+112+122+222
+Absolute error value 110,454250546738
+Relative error value 0,0816920970258698
 
 Polynomial combination № 92
 Created polynomial info:
-0+1+111+1111+11111+1111111
-Absolute error value 0,153871013796717
-Relative error value 0,0616470407839412
+0+1+2+11+12+22+122
+Absolute error value 110,545878431971
+Relative error value 0,0817598651203853
 
 Polynomial combination № 93
 Created polynomial info:
-0+1+11+111+1111
-Absolute error value 0,154095022254701
-Relative error value 0,0617367877622999
+1+2+11+122+222
+Absolute error value 110,627807990001
+Relative error value 0,0818204603203958
 
 Polynomial combination № 94
 Created polynomial info:
-0+1+111+1111+1111111+11111111
-Absolute error value 0,159313017032646
-Relative error value 0,0638273305419255
+0+12+22+111+112+122+222
+Absolute error value 110,699212406006
+Relative error value 0,0818732711126606
 
 Polynomial combination № 95
 Created polynomial info:
-0+1+111+1111+11111+11111111
-Absolute error value 0,154905551242992
-Relative error value 0,0620615189274808
+0+1+11+12+22+122+222
+Absolute error value 110,733925887065
+Relative error value 0,0818989452451521
 
 Polynomial combination № 96
 Created polynomial info:
-0+1+111+1111+11111+111111111
-Absolute error value 0,155558770829323
-Relative error value 0,0623232254925171
+0+1+2+11+12+122
+Absolute error value 110,742058641758
+Relative error value 0,0819049602403391
 
 Polynomial combination № 97
 Created polynomial info:
-0+1+111+1111+111111+1111111
-Absolute error value 0,156661440530156
-Relative error value 0,0627650002124021
+0+1+2+22+111+112+122
+Absolute error value 110,796001935856
+Relative error value 0,0819448567657653
 
 Polynomial combination № 98
 Created polynomial info:
-0+1+111+1111+111111+11111111
-Absolute error value 0,157680665981497
-Relative error value 0,0631733437425868
+1+2+11+12+22+122+222
+Absolute error value 110,850181838538
+Relative error value 0,0819849282871853
 
 Polynomial combination № 99
 Created polynomial info:
-0+1+111+1111+111111+111111111
-Absolute error value 0,158320600971849
-Relative error value 0,0634297279534651
+0+2+12+111+112+122+222
+Absolute error value 110,897870936045
+Relative error value 0,0820201992012641
 
 Polynomial combination № 100
 Created polynomial info:
-0+1+111+1111+1111111+111111111
-Absolute error value 0,159939564858966
-Relative error value 0,0640783513056756
+2+22+111+112+122+222
+Absolute error value 111,247133932652
+Relative error value 0,0822785145351252
 
 Polynomial combination № 101
 Created polynomial info:
-0+1+111+1111+11111111+111111111
-Absolute error value 0,160916539186241
-Relative error value 0,06446976730218
+2+11+12+111+112+222
+Absolute error value 111,297024595806
+Relative error value 0,0823154137298136
 
 Polynomial combination № 102
 Created polynomial info:
-0+1+111+11111+111111+11111111
-Absolute error value 0,162645101505498
-Relative error value 0,0651623002826513
+1+2+11+22+111+112
+Absolute error value 111,53391222512
+Relative error value 0,0824906161063843
 
 Polynomial combination № 103
 Created polynomial info:
-0+1+111+11111+111111+111111111
-Absolute error value 0,163277899482832
-Relative error value 0,065415825113314
+1+2+12+112+122
+Absolute error value 111,557173650945
+Relative error value 0,0825078202850019
 
 Polynomial combination № 104
 Created polynomial info:
-0+1+111+11111+1111111+11111111
-Absolute error value 0,164277191410688
-Relative error value 0,0658161824562049
+1+2+22+111+112+122
+Absolute error value 111,881823676306
+Relative error value 0,0827479318356208
 
 Polynomial combination № 105
 Created polynomial info:
-0+1+111+11111+1111111+111111111
-Absolute error value 0,16489827347778
-Relative error value 0,0660650134125721
+0+22+111+112+122+222
+Absolute error value 111,935511816203
+Relative error value 0,0827876396486918
 
 Polynomial combination № 106
 Created polynomial info:
-0+1+11+111+11111
-Absolute error value 0,160086648002848
-Relative error value 0,064137278847295
+0+2+12+22+111+112+122
+Absolute error value 111,953786420553
+Relative error value 0,082801155568127
 
 Polynomial combination № 107
 Created polynomial info:
-0+1+11+111+111111
-Absolute error value 0,163765622114554
-Relative error value 0,0656112268087155
+0+2+111+112+122+222
+Absolute error value 112,015901872458
+Relative error value 0,0828470962313307
 
 Polynomial combination № 108
 Created polynomial info:
-0+1+111+11111+111111+1111111
-Absolute error value 0,161632991502265
-Relative error value 0,0647568074928947
+2+11+12+22+111+112+222
+Absolute error value 112,228896554592
+Relative error value 0,0830046273553283
 
 Polynomial combination № 109
 Created polynomial info:
-0+1+111+11111+11111111+111111111
-Absolute error value 0,165873330808043
-Relative error value 0,0664556613814273
+11+12+22+111+112+222
+Absolute error value 112,323801201854
+Relative error value 0,0830748189469955
 
 Polynomial combination № 110
 Created polynomial info:
-0+1+11+111+1111111
-Absolute error value 0,16610754201494
-Relative error value 0,0665494959995753
+0+1+22+111+112+122
+Absolute error value 112,38466425653
+Relative error value 0,0831198333356977
 
 Polynomial combination № 111
 Created polynomial info:
-0+1+111+111111+1111111+11111111
-Absolute error value 0,167051542811347
-Relative error value 0,0669277014468537
+2+11+111+112+222
+Absolute error value 112,388282047798
+Relative error value 0,0831225090584863
 
 Polynomial combination № 112
 Created polynomial info:
-0+1+11+111+11111111
-Absolute error value 0,167633242567641
-Relative error value 0,0671607542338307
+0+11+12+22+111+112+222
+Absolute error value 112,432224067633
+Relative error value 0,0831550086293952
 
 Polynomial combination № 113
 Created polynomial info:
-0+1+111+111111+1111111+111111111
-Absolute error value 0,167664695872953
-Relative error value 0,0671733557183306
+1+22+111+112+122
+Absolute error value 112,598601824516
+Relative error value 0,0832780618192087
 
 Polynomial combination № 114
 Created polynomial info:
-0+1+11+1111+11111
-Absolute error value 0,172168509203188
-Relative error value 0,0689777681102515
+1+2+12+111+112+122
+Absolute error value 112,63112011523
+Relative error value 0,0833021123862716
 
 Polynomial combination № 115
 Created polynomial info:
-0+1+111+111111+11111111+111111111
-Absolute error value 0,168634127236048
-Relative error value 0,0675617496939296
+0+2+11+12+111+112+222
+Absolute error value 112,827077628945
+Relative error value 0,0834470427999415
 
 Polynomial combination № 116
 Created polynomial info:
-0+1+111+1111111+11111111+111111111
-Absolute error value 0,170236476735288
-Relative error value 0,0682037166407405
+0+2+22+111+112+122
+Absolute error value 112,885313354565
+Relative error value 0,0834901140129021
 
 Polynomial combination № 117
 Created polynomial info:
-0+1+1111+11111+111111+1111111
-Absolute error value 0,171434981189864
-Relative error value 0,0686838866946571
+0+22+111+112+122
+Absolute error value 113,03700862905
+Relative error value 0,0836023080210119
 
 Polynomial combination № 118
 Created polynomial info:
-0+1+1111+11111+111111+11111111
-Absolute error value 0,17245076207941
-Relative error value 0,0690908501920712
+12+22+111+112+122+222
+Absolute error value 113,736997985659
+Relative error value 0,0841200209940678
 
 Polynomial combination № 119
 Created polynomial info:
-0+1+1111+11111+111111+111111111
-Absolute error value 0,173082374411801
-Relative error value 0,0693439000047278
+1+2+11+22+122+222
+Absolute error value 113,849339850936
+Relative error value 0,0842031091732262
 
 Polynomial combination № 120
 Created polynomial info:
-0+1+1111+11111+1111111+11111111
-Absolute error value 0,174096690471259
-Relative error value 0,0697502766311133
+1+2+12+111+122
+Absolute error value 114,156253087198
+Relative error value 0,0844301025732191
 
 Polynomial combination № 121
 Created polynomial info:
-0+1+1111+11111+1111111+111111111
-Absolute error value 0,17471577790653
-Relative error value 0,0699983084561418
+11+22+111+112+222
+Absolute error value 114,162892421939
+Relative error value 0,0844350130332073
 
 Polynomial combination № 122
 Created polynomial info:
-0+1+1111+11111+11111111+111111111
-Absolute error value 0,175691903108304
-Relative error value 0,0703893842581347
+0+12+22+111+112+122
+Absolute error value 114,23871934867
+Relative error value 0,0844910947197427
 
 Polynomial combination № 123
 Created polynomial info:
-0+1+1111+111111+1111111+11111111
-Absolute error value 0,17690191432705
-Relative error value 0,07087416439385
+12+22+111+112+122
+Absolute error value 114,253119986978
+Relative error value 0,0845017454492176
 
 Polynomial combination № 124
 Created polynomial info:
-0+1+1111+111111+1111111+111111111
-Absolute error value 0,177509673441161
-Relative error value 0,0711176576286702
+0+1+11+22+122+222
+Absolute error value 114,365389447307
+Relative error value 0,0845847800775892
 
 Polynomial combination № 125
 Created polynomial info:
-0+1+11+1111+111111
-Absolute error value 0,179257593514642
-Relative error value 0,0494913289659421
+2+22+111+112+122
+Absolute error value 114,387304117321
+Relative error value 0,0846009881939835
 
 Polynomial combination № 126
 Created polynomial info:
-0+1+1111+111111+11111111+111111111
-Absolute error value 0,180572257714711
-Relative error value 0,0498542953381312
+0+2+11+12+22+111+112
+Absolute error value 114,512000012244
+Relative error value 0,0846932134283797
 
 Polynomial combination № 127
 Created polynomial info:
-0+11+111+1111+11111+111111+1111111
-Absolute error value 0,183334906451354
-Relative error value 0,0734514849564721
+0+1+2+11+122+222
+Absolute error value 114,560713462536
+Relative error value 0,0847292419550144
 
 Polynomial combination № 128
 Created polynomial info:
-0+11+111+1111+11111+111111+11111111
-Absolute error value 0,1838927432333
-Relative error value 0,0736749772569309
+2+12+22+111+112+122
+Absolute error value 114,635335155437
+Relative error value 0,0847844322491547
 
 Polynomial combination № 129
 Created polynomial info:
-0+11+111+1111+11111+111111+111111111
-Absolute error value 0,184225616004349
-Relative error value 0,0738083397453319
+2+11+12+122+222
+Absolute error value 114,675132432728
+Relative error value 0,0848138663634758
 
 Polynomial combination № 130
 Created polynomial info:
-0+11+111+1111+11111+1111111+11111111
-Absolute error value 0,184820726346447
-Relative error value 0,0740467653631599
+2+11+22+111+112+222
+Absolute error value 114,711596484777
+Relative error value 0,0848408352203844
 
 Polynomial combination № 131
 Created polynomial info:
-0+11+111+1111+11111+1111111+111111111
-Absolute error value 0,185139729349234
-Relative error value 0,0741745710533789
+0+1+2+12+22+111+112+222
+Absolute error value 114,787639747031
+Relative error value 0,0848970769089334
 
 Polynomial combination № 132
 Created polynomial info:
-0+1+11+1111+1111111
-Absolute error value 0,185301058378257
-Relative error value 0,0511598725505955
+0+11+22+111+112+222
+Absolute error value 114,801849645454
+Relative error value 0,0849075865669594
 
 Polynomial combination № 133
 Created polynomial info:
-0+11+111+1111+11111+11111111+111111111
-Absolute error value 0,185653464225477
-Relative error value 0,0743803943211044
+0+1+11+22+122
+Absolute error value 115,09692909434
+Relative error value 0,0851258276835244
 
 Polynomial combination № 134
 Created polynomial info:
-0+1+1111+1111111+11111111+111111111
-Absolute error value 0,185910284802259
-Relative error value 0,0513280742137657
+0+2+11+111+112+222
+Absolute error value 115,114981583839
+Relative error value 0,0851391793265481
 
 Polynomial combination № 135
 Created polynomial info:
-0+11+111+1111+111111+1111111+11111111
-Absolute error value 0,186454640464039
-Relative error value 0,0747013783910415
+1+11+22+122+222
+Absolute error value 115,381980717862
+Relative error value 0,0853366522083473
 
 Polynomial combination № 136
 Created polynomial info:
-0+11+111+1111+111111+1111111+111111111
-Absolute error value 0,186754838441888
-Relative error value 0,0748216500167821
+0+1+2+11+22+122
+Absolute error value 115,666558297379
+Relative error value 0,085547126129651
 
 Polynomial combination № 137
 Created polynomial info:
-0+11+111+1111+111111+11111111+111111111
-Absolute error value 0,187241105343576
-Relative error value 0,0750164684870097
+22+111+112+122+222
+Absolute error value 115,670771493499
+Relative error value 0,0855502422145873
 
 Polynomial combination № 138
 Created polynomial info:
-0+11+111+1111+1111111+11111111+111111111
-Absolute error value 0,188066642008842
-Relative error value 0,0753472123432859
+1+2+11+22+122
+Absolute error value 115,835185800254
+Relative error value 0,0856718432343159
 
 Polynomial combination № 139
 Created polynomial info:
-0+1+11+1111+11111111
-Absolute error value 0,189181815688276
-Relative error value 0,0522313130006284
+2+12+111+112+122
+Absolute error value 116,421408655044
+Relative error value 0,0861054143653069
 
 Polynomial combination № 140
 Created polynomial info:
-0+11+111+11111+111111+1111111+11111111
-Absolute error value 0,189550056425815
-Relative error value 0,0759415290167527
+1+12+22+111+222
+Absolute error value 116,583555211485
+Relative error value 0,0862253381541658
 
 Polynomial combination № 141
 Created polynomial info:
-0+11+111+11111+111111+1111111+111111111
-Absolute error value 0,18982151253335
-Relative error value 0,0760502854700921
+2+11+12+22+122+222
+Absolute error value 116,740477410722
+Relative error value 0,0863413980021313
 
 Polynomial combination № 142
 Created polynomial info:
-0+11+111+11111+111111+11111111+111111111
-Absolute error value 0,190263439052788
-Relative error value 0,0762273393640978
+0+2+11+22+111+112
+Absolute error value 116,799903965667
+Relative error value 0,0863853499538986
 
 Polynomial combination № 143
 Created polynomial info:
-0+11+111+11111+1111111+11111111+111111111
-Absolute error value 0,191017134581537
-Relative error value 0,076529300713757
+1+2+12+111+222
+Absolute error value 117,242812056704
+Relative error value 0,0867129253126322
 
 Polynomial combination № 144
 Created polynomial info:
-0+1+11111+111111+1111111+11111111
-Absolute error value 0,191528107954119
-Relative error value 0,0528791021408391
+0+2+12+22+111+112+222
+Absolute error value 117,319797137266
+Relative error value 0,086769863571139
 
 Polynomial combination № 145
 Created polynomial info:
-0+1+11+1111+111111111
-Absolute error value 0,191720764770775
-Relative error value 0,0529322928687948
+0+1+2+112+122
+Absolute error value 117,38932753068
+Relative error value 0,0868212883340332
 
 Polynomial combination № 146
 Created polynomial info:
-0+11+111+111111+1111111+11111111+111111111
-Absolute error value 0,192370275141021
-Relative error value 0,0770714243353451
+0+11+12+22+122+222
+Absolute error value 117,548752184491
+Relative error value 0,0869391990004224
 
 Polynomial combination № 147
 Created polynomial info:
-0+1+11111+111111+1111111+111111111
-Absolute error value 0,19354041789909
-Relative error value 0,0534346819158171
+0+2+11+12+122+222
+Absolute error value 117,966108107901
+Relative error value 0,0872478759451369
 
 Polynomial combination № 148
 Created polynomial info:
-0+1+11+11111+111111
-Absolute error value 0,195956843677135
-Relative error value 0,0541018342565253
+1+2+12+22+111+112+222
+Absolute error value 118,366641006975
+Relative error value 0,0875441105607471
 
 Polynomial combination № 149
 Created polynomial info:
-0+11+1111+11111+111111+1111111+11111111
-Absolute error value 0,196172376306982
-Relative error value 0,0785947020460666
+0+1+11+22+111+112
+Absolute error value 118,991734281669
+Relative error value 0,0880064303012165
 
 Polynomial combination № 150
 Created polynomial info:
-0+11+1111+11111+111111+1111111+111111111
-Absolute error value 0,196400916737385
-Relative error value 0,0786862647185037
+2+11+22+122+222
+Absolute error value 118,99868707395
+Relative error value 0,0880115725947798
 
 Polynomial combination № 151
 Created polynomial info:
-0+1+11111+111111+11111111+111111111
-Absolute error value 0,196722694663269
-Relative error value 0,0543132784824045
+0+2+12+112+122
+Absolute error value 119,055427683844
+Relative error value 0,0880535380183453
 
 Polynomial combination № 152
 Created polynomial info:
-0+11+1111+11111+111111+11111111+111111111
-Absolute error value 0,196775306005056
-Relative error value 0,0788362604186922
+0+1+12+22+111+112+222
+Absolute error value 119,221337014023
+Relative error value 0,0881762447592025
 
 Polynomial combination № 153
 Created polynomial info:
-0+11+1111+11111+1111111+11111111+111111111
-Absolute error value 0,197419016401442
-Relative error value 0,079094157212116
+0+2+11+12+22+122
+Absolute error value 119,226730104823
+Relative error value 0,088180233495668
 
 Polynomial combination № 154
 Created polynomial info:
-0+11+1111+111111+1111111+11111111+111111111
-Absolute error value 0,198590319222243
-Relative error value 0,0795634291755782
+1+2+111+112+122
+Absolute error value 119,792816603349
+Relative error value 0,088598911753261
 
 Polynomial combination № 155
 Created polynomial info:
-0+11+11111+111111+1111111+11111111+111111111
-Absolute error value 0,200926897638188
-Relative error value 0,0804995583486331
+0+11+22+122+222
+Absolute error value 119,885843281582
+Relative error value 0,0886677143967677
 
 Polynomial combination № 156
 Created polynomial info:
-0+1+11111+1111111+11111111+111111111
-Absolute error value 0,201935872686672
-Relative error value 0,0557525877102903
+0+1+2+12+111+112+222
+Absolute error value 119,905741310884
+Relative error value 0,0886824310032568
 
 Polynomial combination № 157
 Created polynomial info:
-0+1+11+11111+1111111
-Absolute error value 0,202142492635007
-Relative error value 0,0558096335270589
+0+1+12+112+222
+Absolute error value 119,932318280675
+Relative error value 0,0887020873621941
 
 Polynomial combination № 158
 Created polynomial info:
-0+1+11+11111+11111111
-Absolute error value 0,206077489519106
-Relative error value 0,0568960490113489
+0+1+12+111+112+222
+Absolute error value 119,986683013193
+Relative error value 0,0887422955839836
 
 Polynomial combination № 159
 Created polynomial info:
-0+1+11+11111+111111111
-Absolute error value 0,208628747983106
-Relative error value 0,057600427383519
+0+2+11+122+222
+Absolute error value 120,130623359998
+Relative error value 0,0888487540382215
 
 Polynomial combination № 160
 Created polynomial info:
-0+1+111111+1111111+11111111+111111111
-Absolute error value 0,210708778474104
-Relative error value 0,0581747041618177
+2+11+12+22+111+112
+Absolute error value 120,185322471833
+Relative error value 0,0888892095673578
 
 Polynomial combination № 161
 Created polynomial info:
-0+1+11+111111+1111111
-Absolute error value 0,212203538381572
-Relative error value 0,0585873932583026
+0+11+12+22+122
+Absolute error value 120,201422107674
+Relative error value 0,0889011168774585
 
 Polynomial combination № 162
 Created polynomial info:
-0+111+1111+11111+111111+1111111+11111111
-Absolute error value 0,213484345663149
-Relative error value 0,0855305872047874
+0+12+111+112+222
+Absolute error value 120,449904637418
+Relative error value 0,0890848948563828
 
 Polynomial combination № 163
 Created polynomial info:
-0+111+1111+11111+111111+1111111+111111111
-Absolute error value 0,213630976197835
-Relative error value 0,0855893334125942
+1+2+11+12+22+222
+Absolute error value 120,942702671655
+Relative error value 0,0894493688773263
 
 Polynomial combination № 164
 Created polynomial info:
-0+111+1111+11111+111111+11111111+111111111
-Absolute error value 0,213872567525646
-Relative error value 0,0856861248099543
+2+11+22+111+112
+Absolute error value 121,090751114461
+Relative error value 0,089558865684324
 
 Polynomial combination № 165
 Created polynomial info:
-0+111+1111+11111+1111111+11111111+111111111
-Absolute error value 0,214291127644061
-Relative error value 0,0858538171650885
+0+2+11+22+122
+Absolute error value 121,187012131653
+Relative error value 0,0896300604488293
 
 Polynomial combination № 166
 Created polynomial info:
-0+111+1111+111111+1111111+11111111+111111111
-Absolute error value 0,215060935436306
-Relative error value 0,0861622337485198
+0+1+2+111+122
+Absolute error value 121,310836240146
+Relative error value 0,0897216409089298
 
 Polynomial combination № 167
 Created polynomial info:
-0+1+11+111111+11111111
-Absolute error value 0,216111217162424
-Relative error value 0,0596662664722319
+2+12+22+111+112+222
+Absolute error value 121,324141490879
+Relative error value 0,089731481488432
 
 Polynomial combination № 168
 Created polynomial info:
-0+111+11111+111111+1111111+11111111+111111111
-Absolute error value 0,216612103461038
-Relative error value 0,08678369529689
+0+1+2+12+22+111+112
+Absolute error value 121,590663694294
+Relative error value 0,0899286016317774
 
 Polynomial combination № 169
 Created polynomial info:
-0+1111+11111+111111+1111111+11111111+111111111
-Absolute error value 0,22010024365296
-Relative error value 0,0881811873609614
+2+11+12+22+122
+Absolute error value 121,807794093339
+Relative error value 0,0900891915369939
 
 Polynomial combination № 170
 Created polynomial info:
-0+1+11+1111111+11111111
-Absolute error value 0,222211032646075
-Relative error value 0,0613503679309982
+0+1+11+12+22+222
+Absolute error value 121,821470315919
+Relative error value 0,090099306487722
 
 Polynomial combination № 171
 Created polynomial info:
-0+1+11+11111111+111111111
-Absolute error value 0,228381131416385
-Relative error value 0,0630538739415752
+0+12+22+111+112+222
+Absolute error value 121,878968727113
+Relative error value 0,0901418323820431
 
 Polynomial combination № 172
 Created polynomial info:
-0+1+111+1111+11111
-Absolute error value 0,231477701455105
-Relative error value 0,0639088076905315
+0+2+12+111+112+122
+Absolute error value 121,893534068144
+Relative error value 0,0901526049258505
 
 Polynomial combination № 173
 Created polynomial info:
-0+1+111+1111+111111
-Absolute error value 0,242408985254466
-Relative error value 0,0669268319311061
+11+12+22+122+222
+Absolute error value 121,970770722095
+Relative error value 0,0902097292483395
 
 Polynomial combination № 174
 Created polynomial info:
-0+1+111+1111+1111111
-Absolute error value 0,249147253873899
-Relative error value 0,0687872042721973
+0+2+111+112+122
+Absolute error value 122,156637402408
+Relative error value 0,0903471964694458
 
 Polynomial combination № 175
 Created polynomial info:
-0+1+111+1111+11111111
-Absolute error value 0,253413526429094
-Relative error value 0,0699650818412739
+0+1+2+111+112+122
+Absolute error value 122,252837493252
+Relative error value 0,0904183461727501
 
 Polynomial combination № 176
 Created polynomial info:
-0+1+111+1111+111111111
-Absolute error value 0,256175127578401
-Relative error value 0,070727533842739
+0+2+12+111+112+222
+Absolute error value 122,437898701383
+Relative error value 0,0905552176656582
 
 Polynomial combination № 177
 Created polynomial info:
-0+11+111+1111+11111+111111
-Absolute error value 0,258836277193044
-Relative error value 0,0714622521239767
+0+1+2+11+12+222
+Absolute error value 122,500029134212
+Relative error value 0,0906011694087716
 
 Polynomial combination № 178
 Created polynomial info:
-0+1+111+11111+111111
-Absolute error value 0,261014476050622
-Relative error value 0,0720636322613534
+1+2+12+122+222
+Absolute error value 123,488835573228
+Relative error value 0,091332491844586
 
 Polynomial combination № 179
 Created polynomial info:
-0+1+111+11111+1111111
-Absolute error value 0,267687135297348
-Relative error value 0,0739058904741434
+0+1+12+22+122
+Absolute error value 123,806175746428
+Relative error value 0,0915671970197236
 
 Polynomial combination № 180
 Created polynomial info:
-0+11+111+1111+11111+1111111
-Absolute error value 0,2681644775492
-Relative error value 0,0740376801626725
+1+2+12+111+112+222
+Absolute error value 124,062843310644
+Relative error value 0,0917570286600229
 
 Polynomial combination № 181
 Created polynomial info:
-0+1+111+11111+11111111
-Absolute error value 0,271869474104886
-Relative error value 0,0750605947280193
+2+12+111+112+222
+Absolute error value 124,078875636316
+Relative error value 0,0917688861874413
 
 Polynomial combination № 182
 Created polynomial info:
-0+11+111+1111+11111+11111111
-Absolute error value 0,273951925981929
-Relative error value 0,0756355400281416
+0+2+12+22+111+112
+Absolute error value 124,122821084793
+Relative error value 0,0918013882941788
 
 Polynomial combination № 183
 Created polynomial info:
-0+1+111+11111+111111111
-Absolute error value 0,274552203902774
-Relative error value 0,0758012710940845
+0+1+2+11+12+22
+Absolute error value 124,184951517622
+Relative error value 0,0918473400372922
 
 Polynomial combination № 184
 Created polynomial info:
-0+11+111+1111+11111+111111111
-Absolute error value 0,27761538009923
-Relative error value 0,0766469851185063
+1+2+12+22+122
+Absolute error value 124,437372928866
+Relative error value 0,0920340312177283
 
 Polynomial combination № 185
 Created polynomial info:
-0+1+111+111111+1111111
-Absolute error value 0,2784083385757
-Relative error value 0,0768659134665101
+1+2+11+12+122
+Absolute error value 124,559421329623
+Relative error value 0,0921242983622442
 
 Polynomial combination № 186
 Created polynomial info:
-0+1+111+111111+11111111
-Absolute error value 0,282475475676363
-Relative error value 0,0779888116168865
+1+2+12+112+222
+Absolute error value 124,724751533641
+Relative error value 0,0922465767806938
 
 Polynomial combination № 187
 Created polynomial info:
-0+11+111+1111+111111+1111111
-Absolute error value 0,283568114790857
-Relative error value 0,0782904789593751
+1+12+22+111+112+222
+Absolute error value 124,769011860523
+Relative error value 0,0922793117718793
 
 Polynomial combination № 188
 Created polynomial info:
-0+1+111+1111111+11111111
-Absolute error value 0,288786173215624
-Relative error value 0,0797311356199955
+1+12+22+112+222
+Absolute error value 124,773867881355
+Relative error value 0,092282903290748
 
 Polynomial combination № 189
 Created polynomial info:
-0+11+111+1111+111111+11111111
-Absolute error value 0,289301551925311
-Relative error value 0,0798734268153814
+12+22+111+112+222
+Absolute error value 124,89038025635
+Relative error value 0,0923690759839283
 
 Polynomial combination № 190
 Created polynomial info:
-0+1+111+1111111+111111111
-Absolute error value 0,29128100868131
-Relative error value 0,0804199361350939
+0+1+11+12+222
+Absolute error value 125,263869750014
+Relative error value 0,0926453092642553
 
 Polynomial combination № 191
 Created polynomial info:
-0+11+111+1111+111111+111111111
-Absolute error value 0,292906063196324
-Relative error value 0,0808685983424416
+0+2+12+111+122
+Absolute error value 125,513406678527
+Relative error value 0,0928298670777818
 
 Polynomial combination № 192
 Created polynomial info:
-0+1+1111+11111+111111
-Absolute error value 0,295013301843784
-Relative error value 0,0814503870358321
+1+12+22+122+222
+Absolute error value 125,554289968529
+Relative error value 0,0928601044084143
 
 Polynomial combination № 193
 Created polynomial info:
-0+11+111+1111+1111111+11111111
-Absolute error value 0,298458752963137
-Relative error value 0,0824016435569124
+0+1+2+12+122+222
+Absolute error value 125,714423034268
+Relative error value 0,09297853901712
 
 Polynomial combination № 194
 Created polynomial info:
-0+1+1111+11111+1111111
-Absolute error value 0,301481957601345
-Relative error value 0,0832363218115253
+1+2+11+12+112+222
+Absolute error value 125,892097780566
+Relative error value 0,0931099474739409
 
 Polynomial combination № 195
 Created polynomial info:
-0+1+1111+11111+11111111
-Absolute error value 0,305487361083402
-Relative error value 0,0843421758927117
+0+1+2+12+22+122
+Absolute error value 126,082128431971
+Relative error value 0,0932504943730923
 
 Polynomial combination № 196
 Created polynomial info:
-0+11+111+1111+11111111+111111111
-Absolute error value 0,307491124092484
-Relative error value 0,0848953959393938
+1+2+12+22+122+222
+Absolute error value 126,090673291238
+Relative error value 0,0932568141613204
 
 Polynomial combination № 197
 Created polynomial info:
-0+11+111+11111+111111+1111111
-Absolute error value 0,310659207357217
-Relative error value 0,085770073814803
+0+1+12+22+122+222
+Absolute error value 126,270175886936
+Relative error value 0,0933895744977637
 
 Polynomial combination № 198
 Created polynomial info:
-0+1+1111+111111+1111111
-Absolute error value 0,311817779816902
-Relative error value 0,0860899447313369
+0+1+2+12+122
+Absolute error value 126,278308641744
+Relative error value 0,0933955894930359
 
 Polynomial combination № 199
 Created polynomial info:
-0+1+1111+111111+11111111
-Absolute error value 0,315661456908609
-Relative error value 0,0871511476832161
+1+2+12+22+111
+Absolute error value 126,815819100215
+Relative error value 0,0937931328769116
 
 Polynomial combination № 200
 Created polynomial info:
-0+11+111+11111+111111+11111111
-Absolute error value 0,316391788523796
-Relative error value 0,0873527853461613
+0+2+11+12+22+112+222
+Absolute error value 126,926921440607
+Relative error value 0,0938753043019695
 
 Polynomial combination № 201
 Created polynomial info:
-0+1+1111+111111+111111111
-Absolute error value 0,318085531136223
-Relative error value 0,0878204116886315
+1+11+12+22+112+222
+Absolute error value 127,847388289468
+Relative error value 0,0945560826944176
 
 Polynomial combination № 202
 Created polynomial info:
-0+11+111+11111+111111+111111111
-Absolute error value 0,319972743076319
-Relative error value 0,0883414530856762
+2+12+22+122+222
+Absolute error value 128,014626835096
+Relative error value 0,094679772524626
 
 Polynomial combination № 203
 Created polynomial info:
-0+1+1111+1111111+11111111
-Absolute error value 0,321620816536138
-Relative error value 0,088796470606333
+1+11+12+22+222
+Absolute error value 128,593603625062
+Relative error value 0,0951079844573267
 
 Polynomial combination № 204
 Created polynomial info:
-0+11+111+11111+1111111+11111111
-Absolute error value 0,325600794062275
-Relative error value 0,0898953048211692
+0+11+12+22+111+112
+Absolute error value 128,686298843021
+Relative error value 0,0951765419524149
 
 Polynomial combination № 205
 Created polynomial info:
-0+1+11111+111111+1111111
-Absolute error value 0,329103667963879
-Relative error value 0,0908624152302261
+0+12+22+122+222
+Absolute error value 128,724215703963
+Relative error value 0,0952045853085339
 
 Polynomial combination № 206
 Created polynomial info:
-0+11+111+11111+1111111+111111111
-Absolute error value 0,329107041875016
-Relative error value 0,0908633467352336
+0+2+12+122+222
+Absolute error value 128,802675754069
+Relative error value 0,0952626144562961
 
 Polynomial combination № 207
 Created polynomial info:
-0+1+11111+111111+11111111
-Absolute error value 0,332713642886571
-Relative error value 0,0918590952199258
+1+2+11+12+222
+Absolute error value 129,078145982019
+Relative error value 0,0954663525693886
 
 Polynomial combination № 208
 Created polynomial info:
-0+11+111+11111+11111111+111111111
-Absolute error value 0,334603175055467
-Relative error value 0,092380777210234
+1+2+22+122+222
+Absolute error value 129,132027992503
+Relative error value 0,0955062037693796
 
 Polynomial combination № 209
 Created polynomial info:
-0+1+11111+1111111+11111111
-Absolute error value 0,338328147588528
-Relative error value 0,0934092069543148
+0+11+22+111+112
+Absolute error value 129,625998432613
+Relative error value 0,0958715449031215
 
 Polynomial combination № 210
 Created polynomial info:
-0+11+111+111111+1111111+11111111
-Absolute error value 0,341116271494167
-Relative error value 0,0941789816383675
+0+2+12+22+122
+Absolute error value 129,776094896133
+Relative error value 0,0959825564287123
 
 Polynomial combination № 211
 Created polynomial info:
-0+1+11111+11111111+111111111
-Absolute error value 0,343805954456596
-Relative error value 0,0949215777075085
+0+1+22+122+222
+Absolute error value 129,901639447307
+Relative error value 0,0960754093302961
 
 Polynomial combination № 212
 Created polynomial info:
-0+11+111+111111+1111111+111111111
-Absolute error value 0,344559923422722
-Relative error value 0,0951297414198569
+0+1+2+122+222
+Absolute error value 130,096963462535
+Relative error value 0,0962198712077204
 
 Polynomial combination № 213
 Created polynomial info:
-0+1+111111+1111111+11111111
-Absolute error value 0,34740012470823
-Relative error value 0,0959138941767615
+2+11+12+22+112+222
+Absolute error value 130,88778728283
+Relative error value 0,0968047654597581
 
 Polynomial combination № 214
 Created polynomial info:
-0+11+111+111111+11111111+111111111
-Absolute error value 0,349993904513735
-Relative error value 0,0966300122898219
+0+1+2+22+122
+Absolute error value 131,202808297378
+Relative error value 0,0970377553823579
 
 Polynomial combination № 215
 Created polynomial info:
-0+1+111111+11111111+111111111
-Absolute error value 0,35262092675449
-Relative error value 0,0973553083253701
+0+11+12+112+222
+Absolute error value 131,419006698801
+Relative error value 0,0971976559810075
 
 Polynomial combination № 216
 Created polynomial info:
-0+1+1111111+11111111+111111111
-Absolute error value 0,357672466329925
-Relative error value 0,0987499907040103
+0+11+12+22+112+222
+Absolute error value 131,463964670005
+Relative error value 0,0972309069507762
 
 Polynomial combination № 217
 Created polynomial info:
-0+11+111+1111111+11111111+111111111
-Absolute error value 0,35892891940916
-Relative error value 0,0990968855353838
+0+2+11+12+112+222
+Absolute error value 132,045023003773
+Relative error value 0,0976606583957848
+
+Polynomial combination № 218
+Created polynomial info:
+0+1+12+22+111
+Absolute error value 132,487523913326
+Relative error value 0,0979879326026021
+
+Polynomial combination № 219
+Created polynomial info:
+0+1+111+112+222
+Absolute error value 132,620415422676
+Relative error value 0,0980862193233209
+
+Polynomial combination № 220
+Created polynomial info:
+0+1+2+11+122
+Absolute error value 132,711390588146
+Relative error value 0,0981535046655124
+
+Polynomial combination № 221
+Created polynomial info:
+0+1+2+12+22+222
+Absolute error value 132,918177587253
+Relative error value 0,0983064445796496
+
+Polynomial combination № 222
+Created polynomial info:
+0+1+2+22+111+112+222
+Absolute error value 133,554962085193
+Relative error value 0,0987774111629438
+
+Polynomial combination № 223
+Created polynomial info:
+0+2+11+12+22+112
+Absolute error value 133,729945387192
+Relative error value 0,0989068290243125
+
+Polynomial combination № 224
+Created polynomial info:
+1+2+12+22+112
+Absolute error value 134,555875008356
+Relative error value 0,099517687569046
+
+Polynomial combination № 225
+Created polynomial info:
+1+2+12+22+111+112
+Absolute error value 134,562239035994
+Relative error value 0,0995223944115692
+
+Polynomial combination № 226
+Created polynomial info:
+2+11+12+112+222
+Absolute error value 134,654968371748
+Relative error value 0,0995909771402196
+
+Polynomial combination № 227
+Created polynomial info:
+2+12+22+111+112
+Absolute error value 134,657627978976
+Relative error value 0,0995929441889356
+
+Polynomial combination № 228
+Created polynomial info:
+11+12+22+112+222
+Absolute error value 134,76541425385
+Relative error value 0,0996726630479338
 

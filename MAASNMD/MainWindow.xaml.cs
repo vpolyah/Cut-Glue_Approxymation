@@ -85,9 +85,9 @@ namespace MAASNMD
             {
                 pr.createPolynom(polDegreeComboBox.SelectedIndex + 1);
                 pr.Params_Combi();
-                infoTextBox.Clear();
+               // infoTextBox.Clear();
                 StreamReader rdr = new StreamReader("Test.txt", Encoding.UTF8);               
-                infoTextBox.Text += rdr.ReadToEnd();
+               // infoTextBox.Text += rdr.ReadToEnd();
                 rdr.Close();               
             }
         }
@@ -353,9 +353,6 @@ namespace MAASNMD
             Global.CompleteListToExcel.Clear();
             Global.FullPolynomeToExcel.Clear();
             
-            //Gd.Columns.Clear();
-            //Gd.Items.Refresh();
-           // Global.CompleteListToExcel.Clear();
 
             pr.againFromFile();
             pr.printForStart();
@@ -723,9 +720,9 @@ namespace MAASNMD
             // операции по выводу текста из файла 
             Dispatcher.Invoke(new Action(() =>
             {
-                infoTextBox.Clear();
+                // infoTextBox.Clear();
                 StreamReader rdp = new StreamReader("Test.txt", Encoding.UTF8);
-                infoTextBox.Text += rdp.ReadToEnd();
+                // infoTextBox.Text += rdp.ReadToEnd();
                 rdp.Close();
             }));
         }
