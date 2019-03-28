@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using Microsoft.Win32;
 using System.Windows.Forms;
+using System.Windows;
 
 namespace MAASNMD
 {
@@ -104,46 +105,53 @@ namespace MAASNMD
 
         public void againFromFile()
         {
-            //Очистка мусора
-            ObjectsList.Clear();
-
-            groupList.Clear();
-            k = 0;//говнокод
-            plnm.Clear();
-            tempRegres.Clear();
-            TempTypeOfRegress.Clear();
-
-            groupList.Clear();
-            ///
-
-            string[] s = File.ReadAllLines(Global.using_file_name);
-            List<string[]> ls = new List<string[]>();
-            for (int i = 0; i < s.Length; i++)
+            try
             {
-                ls.Add(s[i].Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries));
+                //Очистка мусора
+                ObjectsList.Clear();
 
+                groupList.Clear();
+                k = 0;//говнокод
+                plnm.Clear();
+                tempRegres.Clear();
+                TempTypeOfRegress.Clear();
+
+                groupList.Clear();
+                ///
+
+                string[] s = File.ReadAllLines(Global.using_file_name);
+                List<string[]> ls = new List<string[]>();
+                for (int i = 0; i < s.Length; i++)
+                {
+                    ls.Add(s[i].Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries));
+
+                }
+                for (int i = 1; i < ls.Count; i++)
+                {
+                    List<string> mas = new List<string>();
+                    List<double> temp = new List<double>();
+                    string result;
+                    double res;
+
+                    for (int j = 0; j < ls[i].Length - 1; j++)
+                    {
+                        mas.Add(ls[i][j]);
+                    }
+                    result = ls[i][ls[i].Length - 1];
+                    for (int d = 0; d < mas.Count; d++)
+                    {
+                        temp.Add(Convert.ToDouble(mas[d]));
+                    }
+                    res = Convert.ToDouble(result);
+                    ObjectsList.Add(new ExperObject { X_parameters = temp, Y_parametr = res });
+                    //List<double> temp = new List<double>();
+
+
+                }
             }
-            for (int i = 1; i < ls.Count; i++)
+            catch
             {
-                List<string> mas = new List<string>();
-                List<double> temp = new List<double>();
-                string result;
-                double res;
-
-                for (int j = 0; j < ls[i].Length - 1; j++)
-                {
-                    mas.Add(ls[i][j]);
-                }
-                result = ls[i][ls[i].Length - 1];
-                for (int d = 0; d < mas.Count; d++)
-                {
-                    temp.Add(Convert.ToDouble(mas[d]));
-                }
-                res = Convert.ToDouble(result);
-                ObjectsList.Add(new ExperObject { X_parameters = temp, Y_parametr = res });
-                //List<double> temp = new List<double>();
-
-
+                System.Windows.MessageBox.Show("You need to choose file with correct template before you choose a polynomial order.", "Caption", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -166,7 +174,9 @@ namespace MAASNMD
 
         public void createPolynom(int stepen)
         {
-            polynome_string = "";
+            try
+            {
+                polynome_string = "";
                 polynomString = Additionals.BuildIndex(ObjectsList[0].X_parameters.Count, stepen);// создаётся полином (создаются индексы)
 
                 Global.polynomeNumb = polynomString.Length;
@@ -193,14 +203,19 @@ namespace MAASNMD
                 //sw.WriteLine("Информация об созданном полиноме: \r");
 
                 //sw.WriteLine();
-            for (int i=0;i<polynomString.Length;i++)
-            {
-                Global.FullPolynomeToExcel.Add(polynomString[i]);
-            }
-                
+                for (int i = 0; i < polynomString.Length; i++)
+                {
+                    Global.FullPolynomeToExcel.Add(polynomString[i]);
+                }
+
 
                 //sw.Close();
                 polynom = Additionals.CreateListOfIndex(polynomString);      //создаётся полином (создаётся список индексов)
+            }
+            catch
+            {
+
+            }
         }
 
        
@@ -596,7 +611,7 @@ namespace MAASNMD
 			}
 			catch 
 			{
-				MessageBox.Show("Quit program!");
+                System.Windows.MessageBox.Show("Quit program!");
 			}
         }
         #endregion
@@ -670,112 +685,119 @@ namespace MAASNMD
 
         public void ExpertValues(int variant, List<ExperObject> objectTempList, string file_name)  //Функция вывода полученных результатов в виде матрицы (экспериментальные и аналитические значения, значения абсолютных и относительных ошибок)
         {
-			if (objectTempList[0].X_parameters.Count < 3)
-			{
-				CompIndivMaxToMin<ExperObject> ResSort = new CompIndivMaxToMin<ExperObject>();
-				objectTempList.Sort(ResSort);
-			}
+            try
+            {
+                if (objectTempList[0].X_parameters.Count < 3)
+                {
+                    CompIndivMaxToMin<ExperObject> ResSort = new CompIndivMaxToMin<ExperObject>();
+                    objectTempList.Sort(ResSort);
+                }
 
-            StreamWriter sw;
-            sw = File.AppendText(file_name);
-            sw.WriteLine();
-            if (variant == 1)
-                sw.WriteLine("Experimental data matrix");
-            if (variant == 2)
-                sw.WriteLine("Analytical data matrix");
-            if (variant == 3)
-                sw.WriteLine("Absolute error matrix");
-            if (variant == 4)
-                sw.WriteLine("Relative error matrix");
-			if (objectTempList[0].X_parameters.Count < 3)
-			{
-				sw.Write("\t№");
-			}
-			if (objectTempList[0].X_parameters.Count == 1)
-			{
-				List<int> objectCount_Y = argumetHighlight(objectTempList /*objectTempList*/, 0);
-				for (int k = 0; k < objectCount_Y.Count; k++)
-				{
-					sw.WriteLine();
-					sw.Write("\t{0}", objectTempList[objectCount_Y[k]].X_parameters[0]);
-					
-						for (int obj = 0; obj < objectTempList.Count; obj++)
-						{
-							if (objectTempList[obj].X_parameters[0] == objectTempList[objectCount_Y[k]].X_parameters[0])
-							{
-								if (variant == 1)
-									sw.Write("\t{0}", objectTempList[obj].Y_parametr);
-								if (variant == 2)
-									sw.Write("\t{0}", objectTempList[obj].Y_analitic);
-								if (variant == 3)
-									sw.Write("\t{0}", objectTempList[obj].inaccur1);
-								if (variant == 4)
-									sw.Write("\t{0}", objectTempList[obj].inaccur2);
-							}
-						}
-				}
-				sw.Close();
-			}
-			if (objectTempList[0].X_parameters.Count == 2)
-			{
-				List<int> objectCount_X = argumetHighlight(objectTempList/*ObjectsList*/, 1);
-				for (int i = 0; i < objectCount_X.Count; i++)
-				{
-					sw.Write("\t{0}", objectTempList[objectCount_X[i]].X_parameters[1]);
-				}
-				List<int> objectCount_Y = argumetHighlight(objectTempList /*objectTempList*/, 0);
-				for (int k = 0; k < objectCount_Y.Count; k++)
-				{
-					sw.WriteLine();
-					sw.Write("\t{0}", objectTempList[objectCount_Y[k]].X_parameters[0]);
-					for (int j = 0; j < objectCount_X.Count; j++)
-					{
-						for (int obj = 0; obj < objectTempList.Count; obj++)
-						{
-							if (objectTempList[obj].X_parameters[0] == objectTempList[objectCount_Y[k]].X_parameters[0] && objectTempList[obj].X_parameters[1] == objectTempList[objectCount_X[j]].X_parameters[1])
-							{
-								if (variant == 1)
-									sw.Write("\t{0}", objectTempList[obj].Y_parametr);
-								if (variant == 2)
-									sw.Write("\t{0}", objectTempList[obj].Y_analitic);
-								if (variant == 3)
-									sw.Write("\t{0}", objectTempList[obj].inaccur1);
-								if (variant == 4)
-									sw.Write("\t{0}", objectTempList[obj].inaccur2);
-							}
-						}
-					}
-				}
-				sw.Close();
-			}
+                StreamWriter sw;
+                sw = File.AppendText(file_name);
+                sw.WriteLine();
+                if (variant == 1)
+                    sw.WriteLine("Experimental data matrix");
+                if (variant == 2)
+                    sw.WriteLine("Analytical data matrix");
+                if (variant == 3)
+                    sw.WriteLine("Absolute error matrix");
+                if (variant == 4)
+                    sw.WriteLine("Relative error matrix");
+                if (objectTempList[0].X_parameters.Count < 3)
+                {
+                    sw.Write("\t№");
+                }
+                if (objectTempList[0].X_parameters.Count == 1)
+                {
+                    List<int> objectCount_Y = argumetHighlight(objectTempList /*objectTempList*/, 0);
+                    for (int k = 0; k < objectCount_Y.Count; k++)
+                    {
+                        sw.WriteLine();
+                        sw.Write("\t{0}", objectTempList[objectCount_Y[k]].X_parameters[0]);
 
-			if (objectTempList[0].X_parameters.Count > 2)
-			{
-				for (int i = 0; i < objectTempList[0].X_parameters.Count; i++)
-				{
-					sw.Write("\tX{0}", i);
-				}
-				sw.Write("\tY");
-				sw.WriteLine();
-				//List<int> objectCount_X = argumetHighlight(objectTempList/*ObjectsList*/, 1);
-				for (int i = 0; i < objectTempList.Count; i++)
-				{
-					for (int j = 0; j < objectTempList[i].X_parameters.Count; j++)
-					{
-						sw.Write("\t{0}", objectTempList[i].X_parameters[j]);
-					}
-					if (variant == 1)
-						sw.Write("\t{0}", objectTempList[i].Y_parametr);
-					if (variant == 2)
-						sw.Write("\t{0}", objectTempList[i].Y_analitic);
-					if (variant == 3)
-						sw.Write("\t{0}", objectTempList[i].inaccur1);
-					if (variant == 4)
-						sw.Write("\t{0}", objectTempList[i].inaccur2);
-					sw.WriteLine();
-				}
-				sw.Close();
-			}
+                        for (int obj = 0; obj < objectTempList.Count; obj++)
+                        {
+                            if (objectTempList[obj].X_parameters[0] == objectTempList[objectCount_Y[k]].X_parameters[0])
+                            {
+                                if (variant == 1)
+                                    sw.Write("\t{0}", objectTempList[obj].Y_parametr);
+                                if (variant == 2)
+                                    sw.Write("\t{0}", objectTempList[obj].Y_analitic);
+                                if (variant == 3)
+                                    sw.Write("\t{0}", objectTempList[obj].inaccur1);
+                                if (variant == 4)
+                                    sw.Write("\t{0}", objectTempList[obj].inaccur2);
+                            }
+                        }
+                    }
+                    sw.Close();
+                }
+                if (objectTempList[0].X_parameters.Count == 2)
+                {
+                    List<int> objectCount_X = argumetHighlight(objectTempList/*ObjectsList*/, 1);
+                    for (int i = 0; i < objectCount_X.Count; i++)
+                    {
+                        sw.Write("\t\t\t{0}", objectTempList[objectCount_X[i]].X_parameters[1]);
+                    }
+                    List<int> objectCount_Y = argumetHighlight(objectTempList /*objectTempList*/, 0);
+                    for (int k = 0; k < objectCount_Y.Count; k++)
+                    {
+                        sw.WriteLine();
+                        sw.Write("\t{0}", objectTempList[objectCount_Y[k]].X_parameters[0]);
+                        for (int j = 0; j < objectCount_X.Count; j++)
+                        {
+                            for (int obj = 0; obj < objectTempList.Count; obj++)
+                            {
+                                if (objectTempList[obj].X_parameters[0] == objectTempList[objectCount_Y[k]].X_parameters[0] && objectTempList[obj].X_parameters[1] == objectTempList[objectCount_X[j]].X_parameters[1])
+                                {
+                                    if (variant == 1)
+                                        sw.Write("\t\t\t{0}", objectTempList[obj].Y_parametr);
+                                    if (variant == 2)
+                                        sw.Write("\t\t\t{0}", objectTempList[obj].Y_analitic);
+                                    if (variant == 3)
+                                        sw.Write("\t\t\t{0}", objectTempList[obj].inaccur1);
+                                    if (variant == 4)
+                                        sw.Write("\t\t\t{0}", objectTempList[obj].inaccur2);
+                                }
+                            }
+                        }
+                    }
+                    sw.Close();
+                }
+
+                if (objectTempList[0].X_parameters.Count > 2)
+                {
+                    for (int i = 0; i < objectTempList[0].X_parameters.Count; i++)
+                    {
+                        sw.Write("\t\tX{0}", i);
+                    }
+                    sw.Write("\tY");
+                    sw.WriteLine();
+                    //List<int> objectCount_X = argumetHighlight(objectTempList/*ObjectsList*/, 1);
+                    for (int i = 0; i < objectTempList.Count; i++)
+                    {
+                        for (int j = 0; j < objectTempList[i].X_parameters.Count; j++)
+                        {
+                            sw.Write("\t{0}", objectTempList[i].X_parameters[j]);
+                        }
+                        if (variant == 1)
+                            sw.Write("\t{0}", objectTempList[i].Y_parametr);
+                        if (variant == 2)
+                            sw.Write("\t{0}", objectTempList[i].Y_analitic);
+                        if (variant == 3)
+                            sw.Write("\t{0}", objectTempList[i].inaccur1);
+                        if (variant == 4)
+                            sw.Write("\t{0}", objectTempList[i].inaccur2);
+                        sw.WriteLine();
+                    }
+                    sw.Close();
+                }
+            }
+            catch
+            {
+                System.Windows.MessageBox.Show("You need to select .txt file with right template!");
+            }
 		}
         
 
@@ -958,7 +980,7 @@ namespace MAASNMD
             int k = groupList.Count;
             for (int i = 0; i < k; i++)
             {
-                if (groupList[i].commonRelError < Global.down_accuracy || groupList[i].commonRelError > Global.up_accuracy)
+                if (groupList[i].commonRelError < Global.down_relative_accuracy || groupList[i].commonRelError > Global.up_relative_accuracy)
                 {
                     groupList.Remove(groupList[i]);
                     i = -1;
@@ -1154,10 +1176,17 @@ namespace MAASNMD
         #region функция очистки мусора
         public void prisvoenie()
         {
-            temppolynome.Clear();
-            for (int i=0;i<polynomString.Length;i++)
+            try
             {
-                temppolynome.Add(polynomString[i]);
+                temppolynome.Clear();
+                for (int i = 0; i < polynomString.Length; i++)
+                {
+                    temppolynome.Add(polynomString[i]);
+                }
+            }
+            catch
+            {
+
             }
         }
 

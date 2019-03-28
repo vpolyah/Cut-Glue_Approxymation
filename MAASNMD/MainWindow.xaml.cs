@@ -328,21 +328,28 @@ namespace MAASNMD
 
         public double function(int n, int k)
         {
-            if (n == 0 || k == 0)
+            try
             {
-                return 0;
-            }
-                if ( n-k==-1)
+                if (n == 0 || k == 0)
+                {
+                    return 0;
+                }
+                if (n - k == -1)
                 {
                     return 1;
                 }
-            else
+                else
+                {
+                    UInt64 a = factorial(n);
+                    UInt64 b = factorial(k);
+                    UInt64 c = factorial(n - k);
+                    return Convert.ToInt32(a / (b * c));
+                }
+            }
+            catch
             {
-                UInt64 a = factorial(n);
-                UInt64 b = factorial(k);
-                UInt64 c = factorial(n - k);
-
-                return Convert.ToInt32(a / (b * c));
+                MessageBox.Show("Hight polynomial order for researched data fragment!", "Caption", MessageBoxButton.OK, MessageBoxImage.Error);
+                return 0;
             }
 
         }
@@ -359,191 +366,198 @@ namespace MAASNMD
             pr.createPolynom(polDegreeComboBox.SelectedIndex + 1);
             File.Delete("Test.txt");
 
-            double up_acc = 0;
-            double down_acc = 0;
+            double up_relative_acc = 0;
+            double down_relative_acc = 0;
 
             Dispatcher.Invoke(new Action(() =>
             {
                 pbar.Maximum = Global.polynomeNumb+1;
-                up_acc = (double)AccuracyUp.Value;
-                down_acc = (double)AccuracyDown.Value;
+                up_relative_acc = (double)RelativeAccuracyUp.Value;
+                down_relative_acc = (double)RelativeAccuracyDown.Value;
             }));
 
-            Global.up_accuracy = up_acc;
-            Global.down_accuracy = down_acc;
+            Global.up_relative_accuracy = up_relative_acc;
+            Global.down_relative_accuracy = down_relative_acc;
 
-
-            Thread thread0 = new Thread(delegate()
+            if (Global.polynomeNumb > 20)
             {
-                StreamWriter sw;
-                sw = File.AppendText("Test.txt");
-                sw.WriteLine();
-                sw.WriteLine("*************************************************************************************************");
-                sw.Close();
-            });
-
-            thread0.Start();
-
-            Thread thread = new Thread(delegate() {
-
-                thread0.Join();
-                thread0.Abort();
-
- 
-                pr.prisvoenie(); // оставляем
-
-                #region для другого подхода комбинаторики
-                //if (Global.polynomeNumb > 2 && Global.polynomeNumb < 7)
-                //{
-                //    for (int j = 2; j < 5; j++)
-                //    {
-                //        pr.CombinationMass(5, j);
-                //    }
-
-                //    for (int i = 0; i < Global.finalListSize; i++)
-                //    {
-                //        pr.polynomeResize(i);
-                //        pr.Params_Combi();
-                //        pr.function_ready();
-                //        pr.regression_func(Global.SOLE);
-                //        pr.InAccuracyCalc();
-                //        pr.groupListPush();
-                //    }
-
-                //    pr.commonErrorTo_groupList();
-                //    pr.sortResult();
-                //    pr.commonError();
-                //}
-
-                //if (Global.polynomeNumb > 5 && Global.polynomeNumb<10)
-                //{
-                //    for (int j = 2; j < 5; j++)
-                //    {
-                //        pr.CombinationMass(5, j);
-                //    }
-                //    for (int j = 5; j < 9; j++)
-                //    {
-                //        pr.CombinationMass(9, j);
-                //    }
-
-                //    for (int i = 0; i < Global.finalListSize; i++)
-                //    {
-                //        pr.polynomeResize(i);
-                //        pr.Params_Combi();
-                //        pr.function_ready();
-                //        pr.regression_func(Global.SOLE);
-                //        pr.InAccuracyCalc();
-                //        pr.groupListPush();
-                //    }
-
-                //    pr.commonErrorTo_groupList();
-                //    pr.sortResult();
-                //    pr.commonError();
-                //}
-
-                //if (Global.polynomeNumb > 10)
-                //{
-                //    for (int j = 2; j < 5; j++)
-                //    {
-                //        pr.CombinationMass(5, j);
-                //    }
-
-                //    for (int j = 5; j < 9; j++)
-                //    {
-                //        pr.CombinationMass(9, j);
-                //    }
-
-                //    for (int j = 9; j < 14; j++)
-                //    {
-                //        pr.CombinationMass(14, j);
-                //    }
-
-                //    for (int i = 0; i < Global.finalListSize; i++)
-                //    {
-                //        pr.polynomeResize(i);
-                //        pr.Params_Combi();
-                //        pr.function_ready();
-                //        pr.regression_func(Global.SOLE);
-                //        pr.InAccuracyCalc();
-                //        pr.groupListPush();
-                //    }
-
-                //    pr.commonErrorTo_groupList();
-                //    pr.sortResult();
-                //    pr.commonError();
-                //}
-                #endregion
-                int minColOfElementsInComb;
-                if (Global.polynomeNumb<6)
+                MessageBox.Show("The researched polynomial has big number of combinations. In this case recomended to use the EGA.");
+            }
+            else
+            {
+                Thread thread0 = new Thread(delegate ()
                 {
-                    minColOfElementsInComb = 1;
-                }
-                else
-                {
-                    minColOfElementsInComb = 5;
-                }
+                    StreamWriter sw;
+                    sw = File.AppendText("Test.txt");
+                    sw.WriteLine();
+                    sw.WriteLine("*************************************************************************************************");
+                    sw.Close();
+                });
 
-                for (int j = minColOfElementsInComb; j < Global.polynomeNumb + 1; j++)
+                thread0.Start();
+
+                Thread thread = new Thread(delegate ()
                 {
+
+                    thread0.Join();
+                    thread0.Abort();
+
+
+                    pr.prisvoenie(); // оставляем
+
+                    #region для другого подхода комбинаторики
+                    //if (Global.polynomeNumb > 2 && Global.polynomeNumb < 7)
+                    //{
+                    //    for (int j = 2; j < 5; j++)
+                    //    {
+                    //        pr.CombinationMass(5, j);
+                    //    }
+
+                    //    for (int i = 0; i < Global.finalListSize; i++)
+                    //    {
+                    //        pr.polynomeResize(i);
+                    //        pr.Params_Combi();
+                    //        pr.function_ready();
+                    //        pr.regression_func(Global.SOLE);
+                    //        pr.InAccuracyCalc();
+                    //        pr.groupListPush();
+                    //    }
+
+                    //    pr.commonErrorTo_groupList();
+                    //    pr.sortResult();
+                    //    pr.commonError();
+                    //}
+
+                    //if (Global.polynomeNumb > 5 && Global.polynomeNumb<10)
+                    //{
+                    //    for (int j = 2; j < 5; j++)
+                    //    {
+                    //        pr.CombinationMass(5, j);
+                    //    }
+                    //    for (int j = 5; j < 9; j++)
+                    //    {
+                    //        pr.CombinationMass(9, j);
+                    //    }
+
+                    //    for (int i = 0; i < Global.finalListSize; i++)
+                    //    {
+                    //        pr.polynomeResize(i);
+                    //        pr.Params_Combi();
+                    //        pr.function_ready();
+                    //        pr.regression_func(Global.SOLE);
+                    //        pr.InAccuracyCalc();
+                    //        pr.groupListPush();
+                    //    }
+
+                    //    pr.commonErrorTo_groupList();
+                    //    pr.sortResult();
+                    //    pr.commonError();
+                    //}
+
+                    //if (Global.polynomeNumb > 10)
+                    //{
+                    //    for (int j = 2; j < 5; j++)
+                    //    {
+                    //        pr.CombinationMass(5, j);
+                    //    }
+
+                    //    for (int j = 5; j < 9; j++)
+                    //    {
+                    //        pr.CombinationMass(9, j);
+                    //    }
+
+                    //    for (int j = 9; j < 14; j++)
+                    //    {
+                    //        pr.CombinationMass(14, j);
+                    //    }
+
+                    //    for (int i = 0; i < Global.finalListSize; i++)
+                    //    {
+                    //        pr.polynomeResize(i);
+                    //        pr.Params_Combi();
+                    //        pr.function_ready();
+                    //        pr.regression_func(Global.SOLE);
+                    //        pr.InAccuracyCalc();
+                    //        pr.groupListPush();
+                    //    }
+
+                    //    pr.commonErrorTo_groupList();
+                    //    pr.sortResult();
+                    //    pr.commonError();
+                    //}
+                    #endregion
+                    int minColOfElementsInComb;
+                    if (Global.polynomeNumb < 6)
+                    {
+                        minColOfElementsInComb = 1;
+                    }
+                    else
+                    {
+                        minColOfElementsInComb = 5;
+                    }
+
+                    for (int j = minColOfElementsInComb; j < Global.polynomeNumb + 1; j++)
+                    {
+                        Dispatcher.Invoke(new Action(() =>
+                        {
+                            pbar.Value = j;
+                        }));
+
+                        Global.combinationSize = j;
+                        //создание полинома
+                        pr.CombinationMass(Global.polynomeNumb, j);
+
+                        //количество сочетаний размера j
+                        double combCount = 0; //убираем
+
+                        combCount = function(Global.polynomeNumb, j); //убираем
+
+                        for (int i = 0; i < combCount; i++)
+                        {
+                            pr.polynomeResize(i);//убрать и цикл другой
+                            pr.Params_Combi(); //менять не стоит
+                                               //работа с функцией регрессии
+                            pr.function_ready();
+                            pr.regression_func(Global.SOLE);
+                            //Вычисление точности
+                            pr.InAccuracyCalc();
+                            pr.groupListPush();
+                        }
+                    }
+
+                    try
+                    {
+                        pr.commonErrorTo_groupList();
+                        pr.sortResult();
+                        pr.commonError();
+
+                        pr.PutPolynomeElementsToList();
+                        pr.CopyGroupList();
+                    }
+                    catch
+                    {
+                    }
                     Dispatcher.Invoke(new Action(() =>
                     {
-                            pbar.Value = j;
+                        pbar.Value = pbar.Maximum;
                     }));
 
-                    Global.combinationSize = j;
-                    //создание полинома
-                    pr.CombinationMass(Global.polynomeNumb, j);
+                    GridRecord(Gd);
 
-                    //количество сочетаний размера j
-                    double combCount = 0; //убираем
-
-                    combCount = function(Global.polynomeNumb, j); //убираем
-
-                    for (int i = 0; i < combCount; i++)
+                    Dispatcher.Invoke(new Action(() =>
                     {
-                        pr.polynomeResize(i);//убрать и цикл другой
-                        pr.Params_Combi(); //менять не стоит
-                        //работа с функцией регрессии
-                        pr.function_ready();
-                        pr.regression_func(Global.SOLE);
-                        //Вычисление точности
-                        pr.InAccuracyCalc();
-                        pr.groupListPush();
-                    }
-                }
-
-				try
-				{
-					pr.commonErrorTo_groupList();
-					pr.sortResult();
-					pr.commonError();
-
-					pr.PutPolynomeElementsToList();
-					pr.CopyGroupList();
-				}
-				catch
-				{
-				}
-                Dispatcher.Invoke(new Action(() =>
-                {
-                    pbar.Value = pbar.Maximum;
-                }));   
-
-                GridRecord(Gd);
-
-                Dispatcher.Invoke(new Action(() =>
-                {
-                    pbar.Value = 0;
-                }));             
-            });
-
-            thread.Start();
-            Thread thread2 = new Thread(delegate() 
-                {
-                    PrintResult(thread); 
-                    thread.Abort(); 
+                        pbar.Value = 0;
+                    }));
                 });
-            thread2.Start();            
+
+                thread.Start();
+                Thread thread2 = new Thread(delegate ()
+                    {
+                        PrintResult(thread);
+                        thread.Abort();
+                    });
+                thread2.Start();
+            }
     }
 
 
@@ -557,8 +571,8 @@ namespace MAASNMD
             pr.createPolynom(polDegreeComboBox.SelectedIndex + 1);
             File.Delete("Test.txt");
 
-            double up_acc = 0;
-            double down_acc = 0;
+            double up_relative_acc = 0;
+            double down_relative_acc = 0;
 
             int generation_option = 0;
             int population_option = 0;
@@ -568,16 +582,16 @@ namespace MAASNMD
             Dispatcher.Invoke(new Action(() =>
             {
                 pbar.Maximum = (double)Generation_up_down.Value;
-                up_acc = (double)AccuracyUp.Value;
-                down_acc = (double)AccuracyDown.Value;
+                up_relative_acc = (double)RelativeAccuracyUp.Value;
+                down_relative_acc = (double)RelativeAccuracyDown.Value;
                 generation_option = (int)Generation_up_down.Value;
                 population_option = (int)Population_up_down.Value;
                 crossover_option = (int)Crossover_up_down.Value;
                 mutation_option = (int)Mutation_up_down.Value;
             }));
 
-            Global.up_accuracy = up_acc;
-            Global.down_accuracy = down_acc;
+            Global.up_relative_accuracy = up_relative_acc;
+            Global.down_relative_accuracy = down_relative_acc;
             Global.GenerationEGA = generation_option;
             Global.PopulationEGA = population_option;
             Global.CrossoverEGA = crossover_option;

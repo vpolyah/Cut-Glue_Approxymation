@@ -20,7 +20,7 @@
                     <TextBox x:Name="infoTextBox1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="Auto" Width="Auto" IsReadOnly="True" VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" FontSize="14" FontFamily="Arial" Margin="0,-5,-3,-1"/>
                 </TabItem>-->
                 <TabItem x:Name="Hand_mode" Header="Hand mode" Margin="-2,0,-1,0">
-                    <TextBox x:Name="infoTextBox2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="Auto" Width="Auto" IsReadOnly="True" VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" FontSize="14" FontFamily="Arial" Margin="0,-2,-3,-1"/>
+                    <TextBox x:Name="infoTextBox2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="Auto" IsReadOnly="True" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" TextWrapping="Wrap" FontSize="12" FontFamily="Arial" Margin="0,-2,-3,-1"/>
                 </TabItem>
                 <!--<TabItem x:Name="Mini_log" Header="Optimization results" Margin="-2,0,-1,0">
                     <TextBox x:Name="infoTextBox" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="Auto" Width="Auto" IsReadOnly="True" VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" FontSize="14" FontFamily="Arial" Margin="0,-5,-4,-1"/>
@@ -77,60 +77,10 @@
                             <ComboBoxItem Content="14"/>
                             <ComboBoxItem Content="15"/>
                         </ComboBox>
-                        <!--  <TextBox IsEnabled="False" Name="coeffB" HorizontalAlignment="Left" Height="25" Margin="10,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149"/>
-                        <Button IsEnabled="False" Name="addCoeff" Content="Добавить" HorizontalAlignment="Left" Height="25" Margin="165,70,0,0" VerticalAlignment="Top" Width="62" Click="addCoeff_Click" />
-                        <Button IsEnabled="False" Name="delCoeff" Content="Удалить" HorizontalAlignment="Left" Height="25" Margin="232,70,0,0" VerticalAlignment="Top" Width="62" Click="delCoeff_Click" />
-                        <Label IsEnabled="False" Content="Введите коэффициент для удаления/добавления" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Height="25"/> -->
                     </Grid>
                 </GroupBox>
-                <!-- <GroupBox IsEnabled="False" Name="groupBox3" Header="Система линейных уравнений" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="316" Margin="-3,244,0,0">
-                    <Grid>
-                        <Button Name="showSOLE" Content="Вывести" HorizontalAlignment="Left" Height="25" Margin="215,10,0,0" VerticalAlignment="Top" Width="81" Click="showSOLE_Click"/>
 
-
-                    </Grid>
-                </GroupBox>
-                -->
-
-                <Button Content="Combinatorial optimization" HorizontalAlignment="Left" Margin="239,207,0,0" VerticalAlignment="Top" Width="156" Click="Button_Click" RenderTransformOrigin="1.058,0.667"/>
-                <GroupBox x:Name="groupBox4_Copy" Header="Accuracy borders" HorizontalAlignment="Left" Height="110" VerticalAlignment="Top" Width="275" Margin="40,73,0,0">
-                    <TabControl x:Name="tabcontrol3" HorizontalAlignment="Right" VerticalAlignment="Stretch"  RenderTransformOrigin="0.508,0.882" Margin="0,0,52.667,-0.667" Width="205">
-                        <TabItem x:Name="Hand_mode1" Header="Relative acc.">
-                            <Grid Margin="-3,-10,1.333,11.333" >
-                                <xctk:DoubleUpDown x:Name="AccuracyDown" HorizontalAlignment="Left" Margin="51,25,0,0" VerticalAlignment="Top" DisplayDefaultValueOnEmptyText="True" DefaultValue="0.005" Increment="0.001" ForceCursor="True" Minimum="0" Maximum="1"/>
-                                <xctk:DoubleUpDown x:Name="AccuracyUp" HorizontalAlignment="Left" Margin="133,25,0,0" VerticalAlignment="Top" DefaultValue="0.1" RenderTransformOrigin="0.5,0.5" Width="55" Increment="0.001" DisplayDefaultValueOnEmptyText="True">
-                                    <xctk:DoubleUpDown.RenderTransform>
-                                        <TransformGroup>
-                                            <ScaleTransform/>
-                                            <SkewTransform/>
-                                            <RotateTransform Angle="0.649"/>
-                                            <TranslateTransform/>
-                                        </TransformGroup>
-                                    </xctk:DoubleUpDown.RenderTransform>
-                                </xctk:DoubleUpDown>
-                                <Label Content="from:" HorizontalAlignment="Left" Margin="8,22,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.028,0.6"/>
-                                <Label Content="to:" HorizontalAlignment="Left" Margin="110,22,0,0" VerticalAlignment="Top" Width="29" RenderTransformOrigin="1.23,0.462"/>
-                            </Grid>
-                        </TabItem>
-                        <TabItem x:Name="Hand_mode2" Header="Absolute acc.">
-                            <Grid Margin="-3,-10,1.333,11.333" >
-                                <xctk:DoubleUpDown x:Name="AccuracyDown2" HorizontalAlignment="Left" Margin="52,22,0,0" VerticalAlignment="Top" DisplayDefaultValueOnEmptyText="True" DefaultValue="0.005" Increment="0.001" ForceCursor="True" Minimum="0" Maximum="1"/>
-                                <xctk:DoubleUpDown x:Name="AccuracyUp2" HorizontalAlignment="Left" Margin="134,22,0,0" VerticalAlignment="Top" DefaultValue="0.1" RenderTransformOrigin="0.5,0.5" Width="55" Increment="0.001" DisplayDefaultValueOnEmptyText="True">
-                                    <xctk:DoubleUpDown.RenderTransform>
-                                        <TransformGroup>
-                                            <ScaleTransform/>
-                                            <SkewTransform/>
-                                            <RotateTransform Angle="0.649"/>
-                                            <TranslateTransform/>
-                                        </TransformGroup>
-                                    </xctk:DoubleUpDown.RenderTransform>
-                                </xctk:DoubleUpDown>
-                                <Label Content="from:" HorizontalAlignment="Left" Margin="9,19,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.028,0.6"/>
-                                <Label Content="to:" HorizontalAlignment="Left" Margin="111,19,0,0" VerticalAlignment="Top" Width="29" RenderTransformOrigin="1.23,0.462"/>
-                            </Grid>
-                        </TabItem>
-                    </TabControl>
-                </GroupBox>
+                <Button Content="Combinatorial optimization" HorizontalAlignment="Left" Margin="239,203,0,0" VerticalAlignment="Top" Width="156" Click="Button_Click" RenderTransformOrigin="1.058,0.667"/>
                 <TextBox Name="textbox_1" HorizontalAlignment="Left" Height="40" Margin="10,401,0,0" TextWrapping="Wrap" Text="Polynomial combination №1" VerticalAlignment="Top" Width="399" Background="#FF76CBDE"/>
                 <Button Name="Hand_regress" Content="Regression coefficient" HorizontalAlignment="Left" Margin="134,441,0,0" VerticalAlignment="Top" Width="152" Height="26" Click="Hand_regress_Click"/>
                 <Label Content="Manual mode" HorizontalAlignment="Left" Margin="153,369,0,0" VerticalAlignment="Top" Height="27" Width="116" FontFamily="Times New Roman" FontStyle="Italic" FontSize="16">
@@ -154,11 +104,47 @@
                 <Label Content="Population" HorizontalAlignment="Left" Margin="120,228,0,0" VerticalAlignment="Top"/>
                 <Label Content="Crossover" HorizontalAlignment="Left" Margin="120,253,0,0" VerticalAlignment="Top"/>
                 <Label Content="Mutation" HorizontalAlignment="Left" Margin="120,278,0,0" VerticalAlignment="Top"/>
-
-
-
-
-
+                <TabControl x:Name="tabcontrol3" HorizontalAlignment="Right" VerticalAlignment="Stretch"  RenderTransformOrigin="0.508,0.882" Margin="0,90,179,380.333" Width="204">
+                    <TabItem x:Name="Hand_mode1" Header="Relative acc.">
+                        <Grid Margin="-3,-10,1.333,11.333" >
+                            <xctk:DoubleUpDown x:Name="RelativeAccuracyDown" HorizontalAlignment="Left" Margin="51,25,0,0" VerticalAlignment="Top" DisplayDefaultValueOnEmptyText="True" DefaultValue="0.005" Increment="0.001" ForceCursor="True" Minimum="0" Maximum="1"/>
+                            <xctk:DoubleUpDown x:Name="RelativeAccuracyUp" HorizontalAlignment="Left" Margin="133,25,0,0" VerticalAlignment="Top" DefaultValue="0.1" RenderTransformOrigin="0.5,0.5" Width="55" Increment="0.001" DisplayDefaultValueOnEmptyText="True " Minimum="0" Maximum="1">
+                                <xctk:DoubleUpDown.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="0.649"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </xctk:DoubleUpDown.RenderTransform>
+                            </xctk:DoubleUpDown>
+                            <Label Content="from:" HorizontalAlignment="Left" Margin="8,22,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.028,0.6"/>
+                            <Label Content="to:" HorizontalAlignment="Left" Margin="110,22,0,0" VerticalAlignment="Top" Width="29" RenderTransformOrigin="1.23,0.462"/>
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="Hand_mode2" Header="Absolute acc.">
+                        <Grid Margin="-3,-10,1.333,11.333" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="29*"/>
+                                <ColumnDefinition Width="104*"/>
+                                <ColumnDefinition Width="66*"/>
+                            </Grid.ColumnDefinitions>
+                            <xctk:DoubleUpDown x:Name="AbsolutAccuracyDown" HorizontalAlignment="Left" Margin="23.667,22,0,0" VerticalAlignment="Top" DisplayDefaultValueOnEmptyText="True" DefaultValue="0" Increment="1" ForceCursor="True" Minimum="0" Maximum="1000000" Grid.Column="1"/>
+                            <xctk:DoubleUpDown x:Name="AbsolutAccuracyUp" HorizontalAlignment="Left" Margin="1.334,22,0,0" VerticalAlignment="Top" DefaultValue="1000" RenderTransformOrigin="0.5,0.5" Width="55" Increment="1" DisplayDefaultValueOnEmptyText="True" Grid.Column="2">
+                                <xctk:DoubleUpDown.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="0.649"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </xctk:DoubleUpDown.RenderTransform>
+                            </xctk:DoubleUpDown>
+                            <Label Content="from:" HorizontalAlignment="Left" Margin="9,19,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.028,0.6" Grid.ColumnSpan="2"/>
+                            <Label Content="to:" HorizontalAlignment="Left" Margin="82.667,19,0,0" VerticalAlignment="Top" Width="29" RenderTransformOrigin="1.23,0.462" Grid.Column="1" Grid.ColumnSpan="2"/>
+                        </Grid>
+                    </TabItem>
+                </TabControl>
             </Grid>
         </Border>
 

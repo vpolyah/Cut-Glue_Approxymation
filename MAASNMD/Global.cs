@@ -18,8 +18,8 @@ namespace MAASNMD
 
         static public int finalListSize;
 
-        static public double up_accuracy;
-        static public double down_accuracy;
+        static public double up_relative_accuracy;
+        static public double down_relative_accuracy;
 
         static public string polynome_type;
 
