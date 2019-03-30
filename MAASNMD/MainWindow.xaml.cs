@@ -370,20 +370,50 @@ namespace MAASNMD
             double down_relative_acc = 0;
             double up_absolute_acc = 0;
             double down_absolute_acc = 0;
+            double up_withoutModule_acc = 0;
+            double down_withoutModule_acc = 0;
 
             Dispatcher.Invoke(new Action(() =>
             {
                 pbar.Maximum = Global.polynomeNumb+1;
-                up_relative_acc = (double)RelativeAccuracyUp.Value;
-                down_relative_acc = (double)RelativeAccuracyDown.Value;
-                up_absolute_acc = (double)AbsoluteAccuracyUp.Value;
-                down_absolute_acc = (double)AbsoluteAccuracyDown.Value;
+                if (RelativeAccuracyCheckbox.IsChecked == true)
+                {
+                    up_relative_acc = (double)RelativeAccuracyUp.Value;
+                    down_relative_acc = (double)RelativeAccuracyDown.Value;
+                }
+                else
+                {
+                    up_relative_acc = 0;
+                    down_relative_acc = 0;
+                }
+                if (AbsoluteAccuracyCheckbox.IsChecked == true)
+                {
+                    up_absolute_acc = (double)AbsoluteAccuracyUp.Value;
+                    down_absolute_acc = (double)AbsoluteAccuracyDown.Value;
+                }
+                else
+                {
+                    up_absolute_acc = 0;
+                    down_absolute_acc = 0;
+                }
+                if (WithoutModuleAccuracyCheckbox.IsChecked == true)
+                {
+                    up_withoutModule_acc = (double)WithoutModuleAccuracyUp.Value;
+                    down_withoutModule_acc = (double)WithoutModuleAccuracyDown.Value;
+                }
+                else
+                {
+                    up_withoutModule_acc = 0;
+                    down_withoutModule_acc = 0;
+                }
             }));
 
             Global.up_relative_accuracy = up_relative_acc;
             Global.down_relative_accuracy = down_relative_acc;
             Global.up_absolute_accuracy = up_absolute_acc;
             Global.down_absolute_accuracy = down_absolute_acc;
+            Global.up_withoutModule_accuracy = up_withoutModule_acc;
+            Global.down_withoutModule_accuracy = down_withoutModule_acc;
 
             if (Global.polynomeNumb > 20)
             {
@@ -581,6 +611,8 @@ namespace MAASNMD
             double down_relative_acc = 0;
             double up_absolute_acc = 0;
             double down_absolute_acc = 0;
+            double up_withoutModule_acc = 0;
+            double down_withoutModule_acc = 0;
 
             int generation_option = 0;
             int population_option = 0;
@@ -590,10 +622,36 @@ namespace MAASNMD
             Dispatcher.Invoke(new Action(() =>
             {
                 pbar.Maximum = (double)Generation_up_down.Value;
-                up_relative_acc = (double)RelativeAccuracyUp.Value;
-                down_relative_acc = (double)RelativeAccuracyDown.Value;
-                up_absolute_acc = (double)AbsoluteAccuracyUp.Value;
-                down_absolute_acc = (double)AbsoluteAccuracyDown.Value;
+                if (RelativeAccuracyCheckbox.IsChecked == true)
+                {
+                    up_relative_acc = (double)RelativeAccuracyUp.Value;
+                    down_relative_acc = (double)RelativeAccuracyDown.Value;
+                }
+                else
+                {
+                    up_relative_acc = 0;
+                    down_relative_acc = 0;
+                }
+                if (AbsoluteAccuracyCheckbox.IsChecked == true)
+                {
+                    up_absolute_acc = (double)AbsoluteAccuracyUp.Value;
+                    down_absolute_acc = (double)AbsoluteAccuracyDown.Value;
+                }
+                else
+                {
+                    up_absolute_acc = 0;
+                    down_absolute_acc = 0;
+                }
+                if (WithoutModuleAccuracyCheckbox.IsChecked == true)
+                {
+                    up_withoutModule_acc = (double)WithoutModuleAccuracyUp.Value;
+                    down_withoutModule_acc = (double)WithoutModuleAccuracyDown.Value;
+                }
+                else
+                {
+                    up_withoutModule_acc = 0;
+                    down_withoutModule_acc = 0;
+                }
                 generation_option = (int)Generation_up_down.Value;
                 population_option = (int)Population_up_down.Value;
                 crossover_option = (int)Crossover_up_down.Value;
@@ -604,6 +662,8 @@ namespace MAASNMD
             Global.down_relative_accuracy = down_relative_acc;
             Global.up_absolute_accuracy = up_absolute_acc;
             Global.down_absolute_accuracy = down_absolute_acc;
+            Global.up_withoutModule_accuracy = up_withoutModule_acc;
+            Global.down_withoutModule_accuracy = down_withoutModule_acc;
 
 
             Global.GenerationEGA = generation_option;
@@ -888,6 +948,7 @@ namespace MAASNMD
                          dt.Columns.Add("except", typeof(double));
                          dt.Columns.Add("absolute error", typeof(double));
                          dt.Columns.Add("relative error", typeof(double));
+                         dt.Columns.Add("absolute error without modulus", typeof(double));
                          dt.Columns.Add("best alg");
                          for (int i = 0; i < Global.CompleteListToExcel.Count; i++)
                          {
@@ -904,6 +965,7 @@ namespace MAASNMD
                                  }
                              }
                              dr["absolute error"] = Convert.ToDouble(Global.CompleteListToExcel[i].commonAbsEror);
+                             dr["absolute error without modulus"] = Convert.ToDouble(Global.CompleteListToExcel[i].WithoutModuleAbsError);
                              dr["relative error"] = Convert.ToDouble(Global.CompleteListToExcel[i].commonRelError);
                              dr["best alg"] = Global.CompleteListToExcel[i].RegresType;
                              int count = 0;
@@ -938,8 +1000,61 @@ namespace MAASNMD
 
         }
 
+        #region Accuracy_Checkbox_Logic
+        private void RelativeAccuracyCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            Dispatcher.Invoke(new Action(() =>
+            {
+                RelativeAccuracyUp.IsEnabled = true;
+                RelativeAccuracyDown.IsEnabled = true;
+            }));
+        }
 
-        
+        private void RelativeAccuracyCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            Dispatcher.Invoke(new Action(() =>
+            {
+                RelativeAccuracyUp.IsEnabled = false;
+                RelativeAccuracyDown.IsEnabled = false;
+            }));
+        }
+
+        private void AbsoluteAccuracyCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            Dispatcher.Invoke(new Action(() =>
+            {
+                AbsoluteAccuracyUp.IsEnabled = true;
+                AbsoluteAccuracyDown.IsEnabled = true;
+            }));
+        }
+
+        private void AbsoluteAccuracyCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            Dispatcher.Invoke(new Action(() =>
+            {
+                AbsoluteAccuracyUp.IsEnabled = false;
+                AbsoluteAccuracyDown.IsEnabled = false;
+            }));
+        }
+
+        private void WithoutModuleAccuracyCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            Dispatcher.Invoke(new Action(() =>
+            {
+                WithoutModuleAccuracyUp.IsEnabled = true;
+                WithoutModuleAccuracyDown.IsEnabled = true;
+            }));
+        }
+
+        private void WithoutModuleAccuracyCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            Dispatcher.Invoke(new Action(() =>
+            {
+                WithoutModuleAccuracyUp.IsEnabled = false;
+                WithoutModuleAccuracyDown.IsEnabled = false;
+            }));
+        }
+        #endregion
     }
-    
+
 }

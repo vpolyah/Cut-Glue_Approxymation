@@ -104,9 +104,9 @@
                 <Label Content="Population" HorizontalAlignment="Left" Margin="120,228,0,0" VerticalAlignment="Top"/>
                 <Label Content="Crossover" HorizontalAlignment="Left" Margin="120,253,0,0" VerticalAlignment="Top"/>
                 <Label Content="Mutation" HorizontalAlignment="Left" Margin="120,278,0,0" VerticalAlignment="Top"/>
-                <TabControl x:Name="tabcontrol3" HorizontalAlignment="Right" VerticalAlignment="Stretch"  RenderTransformOrigin="0.508,0.882" Margin="0,90,179,380.333" Width="204">
+                <TabControl x:Name="tabcontrol3" HorizontalAlignment="Stretch" VerticalAlignment="Top" RenderTransformOrigin="0.481,0.52" Margin="40,90,24,0">
                     <TabItem x:Name="Hand_mode1" Header="Relative acc.">
-                        <Grid Margin="-3,-10,1.333,11.333" >
+                        <Grid Margin="-3,-10,0.667,-2.667" Height="63" >
                             <xctk:DoubleUpDown x:Name="RelativeAccuracyDown" HorizontalAlignment="Left" Margin="51,25,0,0" VerticalAlignment="Top" DisplayDefaultValueOnEmptyText="True" DefaultValue="0.005" Increment="0.001" ForceCursor="True" Minimum="0" Maximum="1"/>
                             <xctk:DoubleUpDown x:Name="RelativeAccuracyUp" HorizontalAlignment="Left" Margin="133,25,0,0" VerticalAlignment="Top" DefaultValue="0.1" RenderTransformOrigin="0.5,0.5" Width="55" Increment="0.001" DisplayDefaultValueOnEmptyText="True " Minimum="0" Maximum="1">
                                 <xctk:DoubleUpDown.RenderTransform>
@@ -118,19 +118,20 @@
                                     </TransformGroup>
                                 </xctk:DoubleUpDown.RenderTransform>
                             </xctk:DoubleUpDown>
-                            <Label Content="from:" HorizontalAlignment="Left" Margin="8,22,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.028,0.6"/>
-                            <Label Content="to:" HorizontalAlignment="Left" Margin="110,22,0,0" VerticalAlignment="Top" Width="29" RenderTransformOrigin="1.23,0.462"/>
+                            <Label Content="min:" HorizontalAlignment="Left" Margin="8,22,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.028,0.6"/>
+                            <Label Content="max:" HorizontalAlignment="Left" Margin="101,22,0,0" VerticalAlignment="Top" Width="34" RenderTransformOrigin="1.23,0.462"/>
+                            <CheckBox Name="RelativeAccuracyCheckbox"  Content="Include accuracy" IsChecked="True" HorizontalAlignment="Left" Margin="210,28,0,0" VerticalAlignment="Top" Checked="RelativeAccuracyCheckBox_Checked" Unchecked="RelativeAccuracyCheckBox_Unchecked"/>
                         </Grid>
                     </TabItem>
                     <TabItem x:Name="Hand_mode2" Header="Absolute acc.">
-                        <Grid Margin="-3,-10,1.333,11.333" >
+                        <Grid Margin="-3,-10,0.667,-2.667" Height="63" >
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="29*"/>
                                 <ColumnDefinition Width="104*"/>
                                 <ColumnDefinition Width="66*"/>
                             </Grid.ColumnDefinitions>
-                            <xctk:DoubleUpDown x:Name="AbsoluteAccuracyDown" HorizontalAlignment="Left" Margin="23.667,22,0,0" VerticalAlignment="Top" DisplayDefaultValueOnEmptyText="True" DefaultValue="0" Increment="1" ForceCursor="True" Minimum="0" Maximum="1000000" Grid.Column="1"/>
-                            <xctk:DoubleUpDown x:Name="AbsoluteAccuracyUp" HorizontalAlignment="Left" Margin="1.334,22,0,0" VerticalAlignment="Top" DefaultValue="1000" RenderTransformOrigin="0.5,0.5" Width="55" Increment="1" DisplayDefaultValueOnEmptyText="True" Grid.Column="2">
+                            <xctk:DoubleUpDown x:Name="AbsoluteAccuracyDown" IsEnabled="False" HorizontalAlignment="Left" Margin="6,23,0,0" VerticalAlignment="Top" DisplayDefaultValueOnEmptyText="True" DefaultValue="0" Increment="1" ForceCursor="True" Minimum="0" Maximum="1000000" Grid.Column="1"/>
+                            <xctk:DoubleUpDown x:Name="AbsoluteAccuracyUp" IsEnabled="False" HorizontalAlignment="Left" Margin="86,23,0,0" VerticalAlignment="Top" DefaultValue="1000" RenderTransformOrigin="0.5,0.5" Width="55" Increment="1" DisplayDefaultValueOnEmptyText="True" Grid.Column="1">
                                 <xctk:DoubleUpDown.RenderTransform>
                                     <TransformGroup>
                                         <ScaleTransform/>
@@ -140,8 +141,32 @@
                                     </TransformGroup>
                                 </xctk:DoubleUpDown.RenderTransform>
                             </xctk:DoubleUpDown>
-                            <Label Content="from:" HorizontalAlignment="Left" Margin="9,19,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.028,0.6" Grid.ColumnSpan="2"/>
-                            <Label Content="to:" HorizontalAlignment="Left" Margin="82.667,19,0,0" VerticalAlignment="Top" Width="29" RenderTransformOrigin="1.23,0.462" Grid.Column="1" Grid.ColumnSpan="2"/>
+                            <Label Content="min:" HorizontalAlignment="Left" Margin="9,19,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.028,0.6" Grid.ColumnSpan="2"/>
+                            <Label Content="max:" HorizontalAlignment="Left" Margin="53.667,18,0,0" VerticalAlignment="Top" Width="35" RenderTransformOrigin="1.23,0.462" Grid.Column="1"/>
+                            <CheckBox Name="AbsoluteAccuracyCheckbox"  Content="Include accuracy" IsChecked="False" HorizontalAlignment="Left" Margin="163.667,28,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Column="1" Checked="AbsoluteAccuracyCheckBox_Checked" Unchecked="AbsoluteAccuracyCheckBox_Unchecked"/>
+                        </Grid>
+                    </TabItem>
+                    <TabItem x:Name="Hand_mode3" Header="withoutModulus acc.">
+                        <Grid Margin="-3,-10,0.667,-2.667" Height="63" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="29*"/>
+                                <ColumnDefinition Width="104*"/>
+                                <ColumnDefinition Width="66*"/>
+                            </Grid.ColumnDefinitions>
+                            <xctk:DoubleUpDown x:Name="WithoutModuleAccuracyDown" IsEnabled="False" HorizontalAlignment="Left" Margin="49,23,0,0" VerticalAlignment="Top" DisplayDefaultValueOnEmptyText="True" DefaultValue="-1000" Increment="1" ForceCursor="True" Minimum="-1000000" Maximum="1000000" Grid.ColumnSpan="2"/>
+                            <xctk:DoubleUpDown x:Name="WithoutModuleAccuracyUp" IsEnabled="False" HorizontalAlignment="Left" Margin="86,23,0,0" VerticalAlignment="Top" DefaultValue="1000" RenderTransformOrigin="0.5,0.5" Width="55" Increment="1" DisplayDefaultValueOnEmptyText="True" Grid.Column="1">
+                                <xctk:DoubleUpDown.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="0.649"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </xctk:DoubleUpDown.RenderTransform>
+                            </xctk:DoubleUpDown>
+                            <Label Content="min:" HorizontalAlignment="Left" Margin="9,19,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.028,0.6" Grid.ColumnSpan="2"/>
+                            <Label Content="max:" HorizontalAlignment="Left" Margin="54.667,18,0,0" VerticalAlignment="Top" Width="34" RenderTransformOrigin="1.23,0.462" Grid.Column="1"/>
+                            <CheckBox Name="WithoutModuleAccuracyCheckbox"  Content="Include accuracy" IsChecked="False" HorizontalAlignment="Left" Margin="164.667,27,0,0" VerticalAlignment="Top" Grid.Column="1" Checked="WithoutModuleAccuracyCheckBox_Checked" Unchecked="WithoutModuleAccuracyCheckBox_Unchecked" Grid.ColumnSpan="2"/>
                         </Grid>
                     </TabItem>
                 </TabControl>

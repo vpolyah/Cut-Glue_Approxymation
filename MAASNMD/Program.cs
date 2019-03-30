@@ -39,6 +39,7 @@ namespace MAASNMD
     {    
         public List<ExperObject> ValueList = new List<ExperObject>();
         public double commonAbsEror { get; set; } //общая абсолютная ошибка для группы
+        public double WithoutModuleAbsError { get; set; } //абсолютная ошибка без модуля
         public double commonRelError { get; set; }//общая относительная ошибка для группы
         public string polynomeView { get; set; } //вид полинома в строковом исполнении
         public List<string> PolynomeMembers = new List<string>();//члены полинома
@@ -831,6 +832,8 @@ namespace MAASNMD
 
         public void commonErrorTo_groupList()
         {
+            // double Max_Sum = 0; //абсолютная ошибка без модуля
+
             if (groupList.Count> tempRegres.Count)
             {
                 groupList.RemoveRange(tempRegres.Count-1, groupList.Count - tempRegres.Count);
@@ -845,7 +848,7 @@ namespace MAASNMD
                     //{
                     //    groupList[i].regressNumbers.Add(tempRegres[r][]);
                     //}
-
+                    double Max_Sum = 0; //абсолютная ошибка без модуля
                     double Max_Sum_abs = 0;
                     double Sum_otnos = 0;
 
@@ -856,6 +859,7 @@ namespace MAASNMD
 
                     double fact_value = 0;
                     Max_Sum_abs = Math.Abs(groupList[i].ValueList[0].inaccur1);
+                    Max_Sum = groupList[i].ValueList[0].inaccur1;
                     fact_value = groupList[i].ValueList[0].Y_parametr;
 
 
@@ -870,6 +874,7 @@ namespace MAASNMD
                         if (Max_Sum_abs < Math.Abs(groupList[i].ValueList[j].inaccur1))
                         {
                             Max_Sum_abs = Math.Abs(groupList[i].ValueList[j].inaccur1);
+                            Max_Sum = groupList[i].ValueList[j].inaccur1;
                             fact_value = groupList[i].ValueList[j].Y_parametr;
                         }
                         kol++;
@@ -898,6 +903,7 @@ namespace MAASNMD
                     double absolutSKO = Max_Sum_abs; //Math.Round((Math.Sqrt(Sum_abs / kol)), 5);
 
                     groupList[i].commonAbsEror = (Math.Abs((absolutSKO)));
+                    groupList[i].WithoutModuleAbsError = Max_Sum;
 
                     groupList[i].commonRelError = (Math.Abs((absolutSKO / fact_value)));
                 }
@@ -915,7 +921,7 @@ namespace MAASNMD
                     //{
                     //    groupList[i].regressNumbers.Add(tempRegres[r][]);
                     //}
-
+                    double Max_Sum = 0; //абсолютная ошибка без модуля
                     double Max_Sum_abs = 0;
                     double Sum_otnos = 0;
 
@@ -926,6 +932,7 @@ namespace MAASNMD
 
                     double fact_value = 0;
                     Max_Sum_abs = Math.Abs(groupList[i].ValueList[0].inaccur1);
+                    Max_Sum = groupList[i].ValueList[0].inaccur1;
                     fact_value = groupList[i].ValueList[0].Y_parametr;
 
 
@@ -940,6 +947,7 @@ namespace MAASNMD
                         if (Max_Sum_abs < Math.Abs(groupList[i].ValueList[j].inaccur1))
                         {
                             Max_Sum_abs = Math.Abs(groupList[i].ValueList[j].inaccur1);
+                            Max_Sum = groupList[i].ValueList[j].inaccur1;
                             fact_value = groupList[i].ValueList[j].Y_parametr;
                         }
                         kol++;
@@ -968,6 +976,7 @@ namespace MAASNMD
                     double absolutSKO = Max_Sum_abs; //Math.Round((Math.Sqrt(Sum_abs / kol)), 5);
 
                     groupList[i].commonAbsEror = (Math.Abs((absolutSKO)));
+                    groupList[i].WithoutModuleAbsError = Max_Sum;
 
                     groupList[i].commonRelError = (Math.Abs((absolutSKO / fact_value)));
                 }
@@ -983,13 +992,35 @@ namespace MAASNMD
             int k = groupList.Count;
             for (int i = 0; i < k; i++)
             {
-                if (groupList[i].commonRelError < Global.down_relative_accuracy || groupList[i].commonRelError > Global.up_relative_accuracy ||
-                    groupList[i].commonAbsEror < Global.down_absolute_accuracy || groupList[i].commonAbsEror > Global.up_absolute_accuracy
-                    )
+                if (
+                    ((Global.down_relative_accuracy != Global.up_relative_accuracy) && groupList[i].commonRelError < Global.down_relative_accuracy) || 
+                    ((Global.down_relative_accuracy != Global.up_relative_accuracy) && groupList[i].commonRelError > Global.up_relative_accuracy)                    
+                   )
                 {
                     groupList.Remove(groupList[i]);
                     i = -1;
                     k--;
+                    continue;
+                }
+                if (
+                    ((Global.down_absolute_accuracy != Global.up_absolute_accuracy) && groupList[i].commonAbsEror < Global.down_absolute_accuracy) ||
+                    ((Global.down_absolute_accuracy != Global.up_absolute_accuracy) && groupList[i].commonAbsEror > Global.up_absolute_accuracy)
+                   )
+                {
+                    groupList.Remove(groupList[i]);
+                    i = -1;
+                    k--;
+                    continue;
+                }
+                if (
+                    ((Global.down_withoutModule_accuracy != Global.up_withoutModule_accuracy) && groupList[i].WithoutModuleAbsError < Global.down_withoutModule_accuracy) ||
+                    ((Global.down_withoutModule_accuracy != Global.up_withoutModule_accuracy) && groupList[i].WithoutModuleAbsError > Global.up_withoutModule_accuracy)
+                )
+                {
+                    groupList.Remove(groupList[i]);
+                    i = -1;
+                    k--;
+                    continue;
                 }
             }
         }
@@ -1035,6 +1066,7 @@ namespace MAASNMD
                 StreamWriter sw1;
                 sw1 = File.AppendText("Hand_mode.txt");
                 sw1.WriteLine();
+                sw1.WriteLine("Max value of absolute error withput modulus {0}", groupList[i].WithoutModuleAbsError);//среднему значению модулей величин
                 sw1.WriteLine("Max value of modulus absolute error {0}", groupList[i].commonAbsEror);//среднему значению модулей величин
                 sw1.WriteLine("Max value of modulus relative error {0}", groupList[i].commonRelError);//СКО
                 sw1.WriteLine();
