@@ -718,20 +718,20 @@ namespace MAASNMD
                     for (int k = 0; k < objectCount_Y.Count; k++)
                     {
                         sw.WriteLine();
-                        sw.Write("\t{0}", objectTempList[objectCount_Y[k]].X_parameters[0]);
+                        sw.Write("\t{0}", Math.Round(objectTempList[objectCount_Y[k]].X_parameters[0], Global.numbers_after_point));
 
                         for (int obj = 0; obj < objectTempList.Count; obj++)
                         {
                             if (objectTempList[obj].X_parameters[0] == objectTempList[objectCount_Y[k]].X_parameters[0])
                             {
                                 if (variant == 1)
-                                    sw.Write("\t{0}", objectTempList[obj].Y_parametr);
+                                    sw.Write("\t{0}",Math.Round(objectTempList[obj].Y_parametr, Global.numbers_after_point));
                                 if (variant == 2)
-                                    sw.Write("\t{0}", objectTempList[obj].Y_analitic);
+                                    sw.Write("\t{0}", Math.Round(objectTempList[obj].Y_analitic, Global.numbers_after_point));
                                 if (variant == 3)
-                                    sw.Write("\t{0}", objectTempList[obj].inaccur1);
+                                    sw.Write("\t{0}", Math.Round(objectTempList[obj].inaccur1, Global.numbers_after_point));
                                 if (variant == 4)
-                                    sw.Write("\t{0}", objectTempList[obj].inaccur2);
+                                    sw.Write("\t{0}", Math.Round(objectTempList[obj].inaccur2, Global.numbers_after_point));
                             }
                         }
                     }
@@ -742,27 +742,27 @@ namespace MAASNMD
                     List<int> objectCount_X = argumetHighlight(objectTempList/*ObjectsList*/, 1);
                     for (int i = 0; i < objectCount_X.Count; i++)
                     {
-                        sw.Write("\t\t\t{0}", objectTempList[objectCount_X[i]].X_parameters[1]);
+                        sw.Write("\t{0}", objectTempList[objectCount_X[i]].X_parameters[1]);
                     }
                     List<int> objectCount_Y = argumetHighlight(objectTempList /*objectTempList*/, 0);
                     for (int k = 0; k < objectCount_Y.Count; k++)
                     {
                         sw.WriteLine();
-                        sw.Write("\t{0}", objectTempList[objectCount_Y[k]].X_parameters[0]);
-                        for (int j = 0; j < objectCount_X.Count; j++)
+                        sw.Write("\t{0}", Math.Round(objectTempList[objectCount_Y[k]].X_parameters[0], Global.numbers_after_point));
+                    for (int j = 0; j < objectCount_X.Count; j++)
                         {
                             for (int obj = 0; obj < objectTempList.Count; obj++)
                             {
                                 if (objectTempList[obj].X_parameters[0] == objectTempList[objectCount_Y[k]].X_parameters[0] && objectTempList[obj].X_parameters[1] == objectTempList[objectCount_X[j]].X_parameters[1])
                                 {
                                     if (variant == 1)
-                                        sw.Write("\t\t\t{0}", objectTempList[obj].Y_parametr);
+                                        sw.Write("\t{0}", Math.Round(objectTempList[obj].Y_parametr, Global.numbers_after_point));
                                     if (variant == 2)
-                                        sw.Write("\t\t\t{0}", objectTempList[obj].Y_analitic);
+                                        sw.Write("\t{0}", Math.Round(objectTempList[obj].Y_analitic, Global.numbers_after_point));
                                     if (variant == 3)
-                                        sw.Write("\t\t\t{0}", objectTempList[obj].inaccur1);
+                                        sw.Write("\t{0}", Math.Round(objectTempList[obj].inaccur1, Global.numbers_after_point));
                                     if (variant == 4)
-                                        sw.Write("\t\t\t{0}", objectTempList[obj].inaccur2);
+                                        sw.Write("\t{0}", Math.Round(objectTempList[obj].inaccur2, Global.numbers_after_point));
                                 }
                             }
                         }
@@ -774,7 +774,7 @@ namespace MAASNMD
                 {
                     for (int i = 0; i < objectTempList[0].X_parameters.Count; i++)
                     {
-                        sw.Write("\t\tX{0}", i);
+                        sw.Write("\tX{0}", i);
                     }
                     sw.Write("\tY");
                     sw.WriteLine();
@@ -783,16 +783,16 @@ namespace MAASNMD
                     {
                         for (int j = 0; j < objectTempList[i].X_parameters.Count; j++)
                         {
-                            sw.Write("\t{0}", objectTempList[i].X_parameters[j]);
+                            sw.Write("\t{0}", Math.Round(objectTempList[i].X_parameters[j], Global.numbers_after_point));
                         }
                         if (variant == 1)
-                            sw.Write("\t{0}", objectTempList[i].Y_parametr);
+                            sw.Write("\t{0}", Math.Round(objectTempList[i].Y_parametr, Global.numbers_after_point));
                         if (variant == 2)
-                            sw.Write("\t{0}", objectTempList[i].Y_analitic);
+                            sw.Write("\t{0}", Math.Round(objectTempList[i].Y_analitic, Global.numbers_after_point));
                         if (variant == 3)
-                            sw.Write("\t{0}", objectTempList[i].inaccur1);
+                            sw.Write("\t{0}", Math.Round(objectTempList[i].inaccur1, Global.numbers_after_point));
                         if (variant == 4)
-                            sw.Write("\t{0}", objectTempList[i].inaccur2);
+                            sw.Write("\t{0}", Math.Round(objectTempList[i].inaccur2, Global.numbers_after_point));
                         sw.WriteLine();
                     }
                     sw.Close();
@@ -1066,9 +1066,9 @@ namespace MAASNMD
                 StreamWriter sw1;
                 sw1 = File.AppendText("Hand_mode.txt");
                 sw1.WriteLine();
-                sw1.WriteLine("Max value of absolute error withput modulus {0}", groupList[i].WithoutModuleAbsError);//среднему значению модулей величин
-                sw1.WriteLine("Max value of modulus absolute error {0}", groupList[i].commonAbsEror);//среднему значению модулей величин
-                sw1.WriteLine("Max value of modulus relative error {0}", groupList[i].commonRelError);//СКО
+                sw1.WriteLine("Max value of absolute error withput modulus {0}", Math.Round(groupList[i].WithoutModuleAbsError, Global.numbers_after_point));//среднему значению модулей величин
+                sw1.WriteLine("Max value of modulus absolute error {0}", Math.Round(groupList[i].commonAbsEror, Global.numbers_after_point));//среднему значению модулей величин
+                sw1.WriteLine("Max value of modulus relative error {0}", Math.Round(groupList[i].commonRelError, Global.numbers_after_point));//СКО
                 sw1.WriteLine();
                 sw1.Close();
             }
@@ -1134,8 +1134,9 @@ namespace MAASNMD
 
                     StreamWriter sw1;
                     sw1 = File.AppendText("Test.txt");
-                    sw1.WriteLine("Absolute error value {0}", groupList[i].commonAbsEror);//СКО отнести к среднему значению модулей величин
-                    sw1.WriteLine("Relative error value {0}", groupList[i].commonRelError);//СКО
+                    sw1.WriteLine("Max value of absolute error withput modulus {0}", Math.Round(groupList[i].WithoutModuleAbsError, Global.numbers_after_point));//среднему значению модулей величин
+                    sw1.WriteLine("Max value of modulus absolute error {0}", Math.Round(groupList[i].commonAbsEror, Global.numbers_after_point));//среднему значению модулей величин
+                    sw1.WriteLine("Max value of modulus relative error {0}", Math.Round(groupList[i].commonRelError, Global.numbers_after_point));//СКО
                     sw1.WriteLine();
                     sw1.Close();
                 }

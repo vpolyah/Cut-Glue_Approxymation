@@ -964,9 +964,9 @@ namespace MAASNMD
                                      }
                                  }
                              }
-                             dr["absolute error"] = Convert.ToDouble(Global.CompleteListToExcel[i].commonAbsEror);
-                             dr["absolute error without modulus"] = Convert.ToDouble(Global.CompleteListToExcel[i].WithoutModuleAbsError);
-                             dr["relative error"] = Convert.ToDouble(Global.CompleteListToExcel[i].commonRelError);
+                             dr["absolute error"] = Convert.ToDouble(Math.Round(Global.CompleteListToExcel[i].commonAbsEror, Global.numbers_after_point));
+                             dr["absolute error without modulus"] = Convert.ToDouble(Math.Round(Global.CompleteListToExcel[i].WithoutModuleAbsError, Global.numbers_after_point));
+                             dr["relative error"] = Convert.ToDouble(Math.Round(Global.CompleteListToExcel[i].commonRelError, Global.numbers_after_point));
                              dr["best alg"] = Global.CompleteListToExcel[i].RegresType;
                              int count = 0;
                              for (int k = 0; k < Global.FullPolynomeToExcel.Count; k++)
@@ -1055,6 +1055,70 @@ namespace MAASNMD
             }));
         }
         #endregion
+
+        private void NumbersAfterPointComboBox_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (numbersAfterPointComboBox.SelectedIndex != -1)
+                {
+                    int numbersAfterPoint = 0;
+                    Dispatcher.Invoke(new Action(() =>
+                    {
+                        numbersAfterPoint = numbersAfterPointComboBox.SelectedIndex + 1;
+                    }));
+
+                    Global.numbers_after_point = numbersAfterPoint;
+
+                    File.Delete("Hand_Mode.txt");
+                    pr.againFromFile();
+                    pr.printForStart();
+
+                    pr.createPolynom(polDegreeComboBox.SelectedIndex + 1);
+
+
+                    pr.prisvoenie();
+                    for (int j = Global.polynomeNumb; j < Global.polynomeNumb + 1; j++)
+                    {
+
+                        Global.combinationSize = j;
+                        //создание полинома
+                        pr.CombinationMass(Global.polynomeNumb, j);
+                        //количество сочетаний размера j
+                        double combCount = 0;
+                        combCount = function(Global.polynomeNumb, j);
+                        for (int i = 0; i < combCount; i++)
+                        {
+                            pr.polynomeResize(i);
+                            pr.Params_Combi();
+                            //работа с функцией регрессии
+                            pr.function_ready();
+                            pr.regression_func(Global.SOLE);
+                            //Вычисление точности
+                            pr.InAccuracyCalc();
+                            pr.groupListPush();
+                        }
+                    }
+                    pr.commonErrorTo_groupList();
+                    pr.commonError_Hand_Mode();
+
+                    textbox_1.Clear();
+                    textbox_1.AppendText(Global.polynome_type + " ");
+                    //textbox_2.Clear();
+                    //textbox_2.AppendText(Global.polynome_type + " ");
+                    //textbox_3.Clear();
+                    //textbox_3.AppendText(Global.polynome_type + " ");
+                    infoTextBox2.Clear();
+                    StreamReader rdp = new StreamReader("Hand_mode.txt", Encoding.UTF8);
+                    infoTextBox2.Text += rdp.ReadToEnd();
+                    rdp.Close();
+                }
+            }
+            catch
+            {
+
+            }
+        }
     }
 
 }

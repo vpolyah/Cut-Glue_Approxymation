@@ -12,6 +12,8 @@ namespace MAASNMD
         static public double[][] GLOBTEMP;
         static public int polynomeNumb;
 
+        static public int numbers_after_point = 5;
+
         //static public double polynomString1;
 
         static public int combinationSize;
