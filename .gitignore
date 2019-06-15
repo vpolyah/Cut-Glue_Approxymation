@@ -21,3 +21,5 @@ MAASNMD/obj/Debug/MAASNMD\.csprojAssemblyReference\.cache
 MAASNMD/obj/Debug/MAASNMD\.exe
 
 MAASNMD/obj/Debug/MAASNMD\.pdb
+
+*.ide-wal
