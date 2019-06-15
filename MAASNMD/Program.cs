@@ -610,8 +610,25 @@ namespace MAASNMD
                         List<string> ListList = new List<string>(this.listOfRegres);
                         tempRegres.Add(ListList);
                     }
+                    if (Double.IsNaN(Er1) && Er2 < Er3)
+                    {
+                        TempTypeOfRegress.Add("Alg.2");
+                        Checking(Global.SOLE, regressCoefTEMP2);
+                        regressCoef = LinearRegressionProgram.Solve(Mas, 2);
+                        //CopyToRegresList(regressCoefTEMP3);
+                        //List<string> ListList = new List<string>(this.listOfRegres);
+                        //sw.Close();
+                        //tempRegres.Add(ListList);
+                        //listOfRegres.Add(("b0  -   " + regressCoef[0]));
+                        for (int i = 0; i < regressCoef.Length; i++)
+                        {
+                            listOfRegres.Add(("b" + polynomString[i] + "  -   " + regressCoef[i]));
+                        }
+                        List<string> ListList = new List<string>(this.listOfRegres);
+                        tempRegres.Add(ListList);
+                    }
 
-				}
+                }
 			}
 			catch 
 			{
@@ -836,7 +853,10 @@ namespace MAASNMD
 
             if (groupList.Count> tempRegres.Count)
             {
-                groupList.RemoveRange(tempRegres.Count-1, groupList.Count - tempRegres.Count);
+                if (tempRegres.Count > 1)
+                {
+                    groupList.RemoveRange(tempRegres.Count - 1, groupList.Count - tempRegres.Count);
+                }
 
                 for (int i = 0; i < groupList.Count; i++)
                 {

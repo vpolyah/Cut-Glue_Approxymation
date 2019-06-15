@@ -1,51 +1,9 @@
 Input data:
 
 Experimental data matrix
-	№
-	-45	4380
-	-30	1810
-	-15	-960
-	0	6420
-	15	3270
-Created polynomial information:
-0+1+11+111
-Regression coefficient: 
-b0  -   4646,85714285727
-b1  -   124,507936507918
-b11  -   -8,62380952380964
-b111  -   -0,255061728395058
-
-Experimental data matrix
-	№
-	-45	4380
-	-30	1810
-	-15	-960
-	0	6420
-	15	3270
-Analytical data matrix
-	№
-	-45	4823,286
-	-30	36,857
-	-15	1699,714
-	0	4646,857
-	15	3713,286
-Absolute error matrix
-	№
-	-45	443,286
-	-30	-1773,143
-	-15	2659,714
-	0	-1773,143
-	15	443,286
-Max value of absolute error withput modulus 2659,714
-Max value of modulus absolute error 2659,714
-Max value of modulus relative error 2,771
-
-Input data:
-
-Experimental data matrix
-	№
-	-45	4380
-	-30	1810
-	-15	-960
-	0	6420
-	15	3270
+	№	0	15
+	2,5	0,05	6,996
+	4	0,132	20,44
+	5	0,208	26,47
+	6	0,3	36,71
+	7,5	0,48	79,17
