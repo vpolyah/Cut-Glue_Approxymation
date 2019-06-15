@@ -357,10 +357,10 @@ namespace MAASNMD
         public List<string> TempTypeOfRegress = new List<string>();
         public void regression_func( double[][] Mas)
         {
-			try
-			{
-				//TempTypeOfRegress = 
-				listOfRegres.Clear();
+            try
+            {
+                //TempTypeOfRegress = 
+                listOfRegres.Clear();
 
 				if (ObjectsList[0].X_parameters.Count > 2)
 				{
@@ -451,7 +451,7 @@ namespace MAASNMD
 
 				else
 				{
-					double[] regressCoefTEMP1 = LinearRegressionProgram.Solve(Mas, 1);
+					double[] regressCoefTEMP1 = LinearRegressionProgram.Solve(Mas, 2);
 					Checking(Global.SOLE, regressCoefTEMP1);
 					InAccuracyCalc();
 					double Er1 = CheckError();
@@ -473,7 +473,7 @@ namespace MAASNMD
 					{
 						TempTypeOfRegress.Add("Alg.1");
 						Checking(Global.SOLE, regressCoefTEMP1);
-						regressCoef = LinearRegressionProgram.Solve(Mas, 1);
+						regressCoef = LinearRegressionProgram.Solve(Mas, 2);
 						//CopyToRegresList(regressCoefTEMP1);
 						//List<string> ListList = new List<string>(this.listOfRegres);
 						//sw.Close();
@@ -563,7 +563,7 @@ namespace MAASNMD
 					{
 						TempTypeOfRegress.Add("Alg.1/Alg.2");
 						Checking(Global.SOLE, regressCoefTEMP1);
-						regressCoef = LinearRegressionProgram.Solve(Mas, 1);
+						regressCoef = LinearRegressionProgram.Solve(Mas, 2);
 						//CopyToRegresList(regressCoefTEMP3);
 						//List<string> ListList = new List<string>(this.listOfRegres);
 						//sw.Close();
@@ -629,11 +629,11 @@ namespace MAASNMD
                     }
 
                 }
-			}
-			catch 
-			{
+            }
+            catch
+            {
                 System.Windows.MessageBox.Show("Quit program!");
-			}
+            }
         }
         #endregion
 
